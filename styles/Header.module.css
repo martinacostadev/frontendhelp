@@ -1,0 +1,6 @@
+.background {
+    background-image: url('../static/computer.svg');
+    background-position: -50% 80%;
+    background-size: cover;
+    background-color: red;
+}

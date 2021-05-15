@@ -40,8 +40,8 @@ export default function Navbar() {
 
   return (
     <>
-      <Box px={4}>
-        <Flex alignItems={"center"} h={16} justifyContent={"space-between"}>
+      <Box px={0} py={2}>
+        <Flex alignItems={"center"} h={12} justifyContent={"space-between"}>
           <IconButton
             aria-label={"Open Menu"}
             display={{md: !isOpen ? "none" : "inherit"}}
@@ -50,7 +50,7 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack alignItems={"center"} spacing={8}>
-            <Box fontSize={"xl"} fontWeight="bold" opacity={"0.8"}>
+            <Box fontSize={"xl"} fontWeight="bold" opacity={"0.9"}>
               Frontend Help
             </Box>
             <HStack as={"nav"} display={{base: "none", md: "flex"}} spacing={4}>

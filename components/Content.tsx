@@ -1,4 +1,4 @@
-import {SimpleGrid} from "@chakra-ui/react";
+import {SimpleGrid, Box} from "@chakra-ui/react";
 
 import Channels from "./Channels";
 import Communities from "./Communities";
@@ -17,21 +17,29 @@ import Twitter from "./Twitter";
 
 export default function Content() {
   return (
-    <SimpleGrid columns={{base: 1, md: 2}} gap={6} py={4}>
-      <Init />
-      <Frameworks />
-      <Repositories />
-      <Design />
-      <Testing />
-      <Courses />
-      <Communities />
-      <Channels />
-      <Podcasts />
-      <Resources />
-      <PracticeSites />
-      <Hostings />
-      <Twitter />
-      <Projects />
-    </SimpleGrid>
+    <>
+      <SimpleGrid columns={{base: 1, md: 2}} gap={6} py={4}>
+        <Init />
+        <Frameworks />
+        <Repositories />
+        <Design />
+        <Testing />
+        <Courses />
+        <Communities />
+        <Channels />
+        <Podcasts />
+        <Resources />
+        <PracticeSites />
+        <Hostings />
+        <Twitter />
+        <Projects />
+      </SimpleGrid>
+      <Box align="center" my={4}>
+        Made with ❤ by{" "}
+        <a href="https://twitter.com/martindevaluado" rel="noreferrer" target="_blank">
+          @martindevaluado
+        </a>
+      </Box>
+    </>
   );
 }

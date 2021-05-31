@@ -1,10 +1,10 @@
 import {Box, HStack, Text, Icon} from "@chakra-ui/react";
 import Link from "next/link";
-import {AiOutlineLink} from "react-icons/ai";
+import {BsFillMicFill} from "react-icons/bs";
 
-export default function Resources() {
+export default function Podcasts() {
   return (
-    <Link href="/resources">
+    <Link href="/podcasts">
       <Box
         _hover={{
           background: "teal.400",
@@ -22,10 +22,10 @@ export default function Resources() {
             color={"white"}
             p={4}
           >
-            <Icon as={AiOutlineLink} h={8} w={8} />
+            <Icon as={BsFillMicFill} h={8} w={8} />
           </Box>
           <Box pl={2}>
-            <Text textStyle="title">Recursos</Text>
+            <Text textStyle="title">Podcasts</Text>
             <Text
               sx={{
                 ".mainBox:hover &": {
@@ -34,7 +34,7 @@ export default function Resources() {
               }}
               textStyle="description"
             >
-              W3Schools, Freecodecamp, Developer Mozilla, Pure React
+              DevRock, Midudev, WeCodeSign
             </Text>
           </Box>
         </HStack>

@@ -2,10 +2,12 @@ import {SimpleGrid} from "@chakra-ui/react";
 
 import Channels from "./Channels";
 import Communities from "./Communities";
+import Courses from "./Courses";
 import Design from "./Design";
 import Frameworks from "./Frameworks";
 import Hostings from "./Hostings";
 import Init from "./Init";
+import Podcasts from "./Podcasts";
 import PracticeSites from "./PracticeSites";
 import Projects from "./Projects";
 import Repositories from "./Repositories";
@@ -21,8 +23,10 @@ export default function Content() {
       <Repositories />
       <Design />
       <Testing />
+      <Courses />
       <Communities />
       <Channels />
+      <Podcasts />
       <Resources />
       <PracticeSites />
       <Hostings />

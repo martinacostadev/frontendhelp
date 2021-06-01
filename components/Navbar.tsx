@@ -1,11 +1,9 @@
-import {HamburgerIcon, CloseIcon} from "@chakra-ui/icons";
+// import {HamburgerIcon, CloseIcon} from "@chakra-ui/icons";
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   Link,
-  IconButton,
   Button,
   Menu,
   MenuButton,
@@ -15,6 +13,7 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
+  Heading,
 } from "@chakra-ui/react";
 import {ReactNode} from "react";
 
@@ -41,18 +40,20 @@ export default function Navbar() {
   return (
     <>
       <Box px={0} py={2}>
-        <Flex alignItems={"center"} h={12} justifyContent={"space-between"}>
-          <IconButton
+        <Flex alignItems={"center"} h={12} justifyContent={"space-between"} mt={4}>
+          <Heading as="h2" mb={4} size="xl">
+            Frontend Help
+          </Heading>
+
+          {/* <IconButton
             aria-label={"Open Menu"}
             display={{md: !isOpen ? "none" : "inherit"}}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             size={"md"}
             onClick={isOpen ? onClose : onOpen}
-          />
+          /> */}
+
           <HStack alignItems={"center"} spacing={8}>
-            <Box fontSize={"xl"} fontWeight="bold" opacity={"0.9"}>
-              Frontend Help
-            </Box>
             <HStack as={"nav"} display={{base: "none", md: "flex"}} spacing={4}>
               {/* {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>

@@ -1,4 +1,5 @@
 import {SimpleGrid, Box} from "@chakra-ui/react";
+import React from "react";
 
 import Channels from "./Channels";
 import Communities from "./Communities";
@@ -7,6 +8,9 @@ import Design from "./Design";
 import Frameworks from "./Frameworks";
 import Hostings from "./Hostings";
 import Init from "./Init";
+import Interviews from "./Interviews";
+import Jobs from "./Jobs";
+import Mentoring from "./Mentoring";
 import Podcasts from "./Podcasts";
 import PracticeSites from "./PracticeSites";
 import Projects from "./Projects";
@@ -33,6 +37,9 @@ export default function Content() {
         <Hostings />
         <Twitter />
         <Projects />
+        <Interviews />
+        <Jobs />
+        <Mentoring />
       </SimpleGrid>
       <Box align="center" my={4}>
         Made with ❤ by{" "}

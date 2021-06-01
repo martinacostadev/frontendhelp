@@ -1,9 +1,7 @@
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {Container, Box, Grid, Text, Link} from "@chakra-ui/react";
+import {Container, Box, Grid, Text, Link, Heading} from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
-
-import styles from "../styles/Background.module.css";
 
 export default function start() {
   return (
@@ -20,7 +18,6 @@ export default function start() {
         bgGradient="linear(to-tr, gray.300, gray.50)"
         borderRadius={12}
         boxShadow="dark-lg"
-        className={styles.container}
         my={4}
         px={8}
         py={4}
@@ -29,7 +26,9 @@ export default function start() {
           <title>HTML, CSS y JavaScript - FrontEnd Help</title>
         </Head>
         <Box mt={2}>
-          <Text textStyle="bigTitle">Comienzo</Text>
+          <Heading as="h3" size="lg">
+            Comienzo
+          </Heading>
           <Text textStyle="descripcion">HTML, CSS y JavaScript: semantic, CSS Flex y Grid.</Text>
         </Box>
 

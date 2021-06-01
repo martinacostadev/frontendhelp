@@ -1,9 +1,7 @@
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {Container, Box, Text, Link, Grid} from "@chakra-ui/react";
+import {Container, Box, Text, Link, Grid, Heading} from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
-
-import styles from "../styles/Background.module.css";
 
 export default function start() {
   return (
@@ -20,7 +18,6 @@ export default function start() {
         bgGradient="linear(to-tr, gray.300, gray.50)"
         borderRadius={12}
         boxShadow="dark-lg"
-        className={styles.container}
         my={4}
         px={8}
         py={4}
@@ -29,31 +26,35 @@ export default function start() {
           <title>Sitios de práctica - FrontEnd Help</title>
         </Head>
         <Box mt={4}>
-          <Text textStyle="bigTitle">Sitios de práctica</Text>
+          <Heading as="h3" size="lg">
+            Sitios de práctica
+          </Heading>
         </Box>
 
-        <Box mt={4}>
-          <Text>Sitios en los cuales puedes poner en práctica lo que vas aprendiendo.</Text>
+        <Box my={8}>
+          <Text fontSize="lg" fontWeight="bold">
+            Sitios en los cuales puedes poner en práctica lo que vas aprendiendo.
+          </Text>
         </Box>
 
-        <Grid gap={4} mt={4}>
+        <Grid gap={6}>
           <Link isExternal href="https://www.frontendmentor.io/challenges">
-            <Text fontSize="xl" fontWeight="bold" mt={2}>
+            <Text fontSize="xl" fontWeight="bold">
               FrontendMentor <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>
           <Link isExternal href="https://www.codewars.com/">
-            <Text fontSize="xl" fontWeight="bold" mt={2}>
+            <Text fontSize="xl" fontWeight="bold">
               Codewars <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>
           <Link isExternal href="https://codepen.io/challenges">
-            <Text fontSize="xl" fontWeight="bold" mt={2}>
+            <Text fontSize="xl" fontWeight="bold">
               Codepen <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>
           <Link isExternal href="https://courseit.io/desafios">
-            <Text fontSize="xl" fontWeight="bold" mt={2}>
+            <Text fontSize="xl" fontWeight="bold">
               Courseit <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>

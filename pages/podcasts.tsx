@@ -1,9 +1,7 @@
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {Container, Box, Text, Link, Grid} from "@chakra-ui/react";
+import {Container, Box, Text, Link, Grid, Heading} from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
-
-import styles from "../styles/Background.module.css";
 
 export default function Podcasts() {
   return (
@@ -20,7 +18,6 @@ export default function Podcasts() {
         bgGradient="linear(to-tr, gray.300, gray.50)"
         borderRadius={12}
         boxShadow="dark-lg"
-        className={styles.container}
         my={4}
         px={8}
         py={4}
@@ -29,7 +26,9 @@ export default function Podcasts() {
           <title>Podcasts - FrontEnd Help</title>
         </Head>
         <Box mt={4}>
-          <Text textStyle="bigTitle">Podcasts</Text>
+          <Heading as="h3" size="lg">
+            Podcasts
+          </Heading>
         </Box>
 
         <Grid gap={4} mt={4}>

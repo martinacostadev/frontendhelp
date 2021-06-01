@@ -1,9 +1,7 @@
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {Container, Box, Text, Link, Grid} from "@chakra-ui/react";
+import {Container, Box, Text, Link, Grid, Heading} from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
-
-import styles from "../styles/Background.module.css";
 
 export default function start() {
   return (
@@ -20,7 +18,6 @@ export default function start() {
         bgGradient="linear(to-tr, gray.300, gray.50)"
         borderRadius={12}
         boxShadow="dark-lg"
-        className={styles.container}
         my={4}
         px={8}
         py={4}
@@ -29,14 +26,18 @@ export default function start() {
           <title>Cursos - FrontEnd Help</title>
         </Head>
         <Box mt={4}>
-          <Text textStyle="bigTitle">Cursos</Text>
+          <Heading as="h3" size="lg">
+            Cursos
+          </Heading>
         </Box>
 
-        <Box mt={4}>
-          <Text>Sitios recomendados para adquirir cursos pagos y gratuitos.</Text>
+        <Box my={8}>
+          <Text fontSize="lg" fontWeight="bold">
+            Sitios recomendados para adquirir cursos pagos y gratuitos.
+          </Text>
         </Box>
 
-        <Grid gap={4} mt={4}>
+        <Grid gap={4}>
           <Link isExternal href="https://www.youtube.com/">
             <Text fontSize="xl" mt={2}>
               YouTube <ExternalLinkIcon mx="2px" />

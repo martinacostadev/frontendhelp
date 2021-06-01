@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Frontend Help</title>
       </Head>
-      <Container bg="gray.100" borderRadius={8} maxW="container.md" my={2} py={2}>
+      <Container bg="gray.100" borderRadius={8} maxW="container.xl" minW="container.md" py={2}>
         <Navbar />
         <Header />
         <Content />

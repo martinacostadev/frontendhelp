@@ -1,9 +1,7 @@
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {Container, Box, Text, Link, Grid} from "@chakra-ui/react";
+import {Container, Box, Text, Link, Grid, Heading} from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
-
-import styles from "../styles/Background.module.css";
 
 export default function start() {
   return (
@@ -20,7 +18,6 @@ export default function start() {
         bgGradient="linear(to-tr, gray.300, gray.50)"
         borderRadius={12}
         boxShadow="dark-lg"
-        className={styles.container}
         my={4}
         px={8}
         py={4}
@@ -29,10 +26,11 @@ export default function start() {
           <title>Proyectos - FrontEnd Help</title>
         </Head>
         <Box mt={4}>
-          <Text textStyle="bigTitle">Proyectos Open Source</Text>
+          <Heading as="h3" size="lg">
+            Proyectos Open Source
+          </Heading>
         </Box>
-
-        <Box mt={4}>
+        <Box mt={8}>
           <Link
             isExternal
             href="https://dev.to/jorgeucano/deberias-colaborar-en-proyectos-open-source-1onf"

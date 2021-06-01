@@ -1,9 +1,21 @@
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {Container, Box, Text, Link, Grid, Heading} from "@chakra-ui/react";
+import {
+  Container,
+  Box,
+  Text,
+  Link,
+  Grid,
+  Heading,
+  List,
+  ListItem,
+  ListIcon,
+  Flex,
+  HStack,
+} from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
-
-import styles from "../styles/Background.module.css";
+import {FaYoutube} from "react-icons/fa";
+import {ImTwitch} from "react-icons/im";
 
 export default function start() {
   return (
@@ -20,7 +32,6 @@ export default function start() {
         bgGradient="linear(to-tr, gray.300, gray.50)"
         borderRadius={12}
         boxShadow="dark-lg"
-        className={styles.container}
         my={4}
         px={8}
         py={4}
@@ -34,14 +45,21 @@ export default function start() {
           </Heading>
         </Box>
 
-        <Box mt={4}>
-          <Text>Gente que genera contenido en vivo o grabado.</Text>
+        <Box my={8}>
+          <Text fontSize="lg" fontWeight="bold">
+            Gente que genera contenido en vivo o grabado.
+          </Text>
         </Box>
 
-        <Grid gap={4} mt={4}>
-          <Text fontSize="xl" fontWeight="bold" mt={2}>
-            YouTube
-          </Text>
+        <Grid gap={4}>
+          <List>
+            <HStack spacing="6px">
+              <ListIcon as={FaYoutube} color="red.600" h={12} w={12} />
+              <Heading as="h3" size="lg">
+                YouTube
+              </Heading>
+            </HStack>
+          </List>
 
           <Link isExternal href="https://www.youtube.com/c/midudev">
             <Text fontSize="xl" mt={2}>
@@ -79,11 +97,21 @@ export default function start() {
             </Text>
           </Link>
 
-          {/* TWITCH */}
+          <Link isExternal href="https://www.youtube.com/c/LeonardoGalante/videos">
+            <Text fontSize="xl" mt={2}>
+              Leonardo Galante <ExternalLinkIcon mx="2px" />
+            </Text>
+          </Link>
 
-          <Text fontSize="xl" fontWeight="bold" mt={2}>
-            Twitch
-          </Text>
+          {/* TWITCH */}
+          <List mt={6}>
+            <HStack spacing="6px">
+              <ListIcon as={ImTwitch} color="purple.700" h={12} w={12} />
+              <Heading as="h3" size="lg">
+                Twitch
+              </Heading>
+            </HStack>
+          </List>
 
           <Link isExternal href="https://www.twitch.tv/midudev">
             <Text fontSize="xl" mt={2}>

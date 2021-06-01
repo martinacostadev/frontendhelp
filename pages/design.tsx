@@ -31,7 +31,7 @@ export default function start() {
           </Heading>
         </Box>
 
-        <Box mt={4}>
+        <Box my={6}>
           <Link isExternal href="https://www.neoland.es/blog/que-es-el-ux-ui-design">
             <Text fontSize="xl" fontWeight="bold" mt={2}>
               ¿Qué es el diseño UX/UI? <ExternalLinkIcon mx="2px" />
@@ -39,7 +39,7 @@ export default function start() {
           </Link>
         </Box>
 
-        <Grid gap={4} mt={4}>
+        <Grid gap={4}>
           <Link isExternal href="https://www.figma.com/">
             <Text fontSize="xl" fontWeight="bold" mt={2}>
               Figma <ExternalLinkIcon mx="2px" />

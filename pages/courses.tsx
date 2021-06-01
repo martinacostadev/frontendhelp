@@ -39,7 +39,7 @@ export default function start() {
 
         <Grid gap={4}>
           <Link isExternal href="https://www.youtube.com/">
-            <Text fontSize="xl" mt={2}>
+            <Text fontSize="xl">
               YouTube <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>

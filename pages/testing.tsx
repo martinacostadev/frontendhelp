@@ -31,7 +31,7 @@ export default function start() {
           </Heading>
         </Box>
 
-        <Box mt={4}>
+        <Box my={6}>
           <Link isExternal href="https://yeisondaza.com/cuales-son-buenos-tests-en-frontend">
             <Text fontSize="xl" fontWeight="bold" mt={2}>
               ¿Cuáles son buenos tests en frontend? <ExternalLinkIcon mx="2px" />
@@ -39,9 +39,9 @@ export default function start() {
           </Link>
         </Box>
 
-        <Grid gap={4} mt={4}>
+        <Grid gap={4}>
           <Link isExternal href="https://jestjs.io/">
-            <Text fontSize="xl" fontWeight="bold" mt={2}>
+            <Text fontSize="xl" fontWeight="bold">
               Jest <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>

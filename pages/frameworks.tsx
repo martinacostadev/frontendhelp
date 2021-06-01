@@ -36,7 +36,7 @@ export default function start() {
           <Text>
             Los frameworks de JavaScript son una parte esencial del desarrollo web front-end
             moderno, los cuales proveen a los desarrolladores herramientas probadas y testeadas para
-            la creación de aplicaciones web interactivas y escalables
+            la creación de aplicaciones web interactivas y escalables.
           </Text>
         </Box>
 

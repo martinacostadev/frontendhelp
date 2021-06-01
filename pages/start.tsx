@@ -39,7 +39,7 @@ export default function start() {
           </Text>
         </Box>
 
-        <Text fontSize="2xl" fontWeight="bold" mt={4}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           Recursos en Español
         </Text>
 
@@ -102,7 +102,7 @@ export default function start() {
           </Link>
         </Grid>
 
-        <Text fontSize="2xl" fontWeight="bold" mt={4}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           Recursos en Inglés
         </Text>
 

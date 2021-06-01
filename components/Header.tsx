@@ -15,7 +15,7 @@ export default function Header() {
         ¿Por dónde empezar?
       </Text>
       <Text noOfLines={2} opacity="0.9" pb={2}>
-        Recomendaciones acerca de como comenzar en el mundo de Frontend.
+        Recomendaciones acerca de como comenzar y/o avanzar en el mundo de Frontend.
       </Text>
     </Box>
   );

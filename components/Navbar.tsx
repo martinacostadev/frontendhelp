@@ -39,7 +39,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box px={0} py={2}>
+      <Box my={4} py={2}>
         <Flex alignItems={"center"} h={12} justifyContent={"space-between"} mt={4}>
           <Heading as="h2" mb={4} size="xl">
             Frontend Help

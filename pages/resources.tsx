@@ -39,7 +39,7 @@ export default function start() {
 
         <Grid gap={4}>
           <Link isExternal href="https://www.w3schools.com/">
-            <Text fontSize="xl" fontWeight="bold" mt={2}>
+            <Text fontSize="xl" fontWeight="bold">
               W3Schools <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>

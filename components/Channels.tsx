@@ -26,8 +26,11 @@ export default function Channels() {
             <Icon as={CgScreen} h={8} w={8} />
           </Box>
           <Box pl={2}>
-            <Text textStyle="title">Canales YouTube/Twitch</Text>
+            <Text fontSize="3xl" textStyle="title">
+              Canales YouTube/Twitch
+            </Text>
             <Text
+              fontSize="md"
               sx={{
                 ".mainBox:hover &": {
                   color: "gray.800",

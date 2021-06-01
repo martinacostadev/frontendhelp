@@ -26,8 +26,11 @@ export default function Design() {
             <Icon as={VscPaintcan} h={8} w={8} />
           </Box>
           <Box pl={2}>
-            <Text textStyle="title">Diseño UX/UI</Text>
+            <Text fontSize="3xl" textStyle="title">
+              Diseño UX/UI
+            </Text>
             <Text
+              fontSize="md"
               sx={{
                 ".mainBox:hover &": {
                   color: "gray.800",

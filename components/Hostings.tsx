@@ -26,8 +26,11 @@ export default function Hostings() {
             <Icon as={AiOutlineCloudServer} h={8} w={8} />
           </Box>
           <Box pl={2}>
-            <Text textStyle="title">Hostings</Text>
+            <Text fontSize="3xl" textStyle="title">
+              Hostings
+            </Text>
             <Text
+              fontSize="md"
               sx={{
                 ".mainBox:hover &": {
                   color: "gray.800",

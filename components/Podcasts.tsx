@@ -25,8 +25,11 @@ export default function Podcasts() {
             <Icon as={BsFillMicFill} h={8} w={8} />
           </Box>
           <Box pl={2}>
-            <Text textStyle="title">Podcasts</Text>
+            <Text fontSize="3xl" textStyle="title">
+              Podcasts
+            </Text>
             <Text
+              fontSize="md"
               sx={{
                 ".mainBox:hover &": {
                   color: "gray.800",

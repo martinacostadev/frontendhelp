@@ -26,8 +26,11 @@ export default function Jobs() {
           <Icon as={BsPersonBoundingBox} h={10} w={10} />
         </Box>
         <Box pl={2}>
-          <Text textStyle="title">Empleos</Text>
+          <Text fontSize="3xl" textStyle="title">
+            Empleos
+          </Text>
           <Text
+            fontSize="md"
             sx={{
               ".mainBox:hover &": {
                 color: "gray.800",

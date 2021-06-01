@@ -26,8 +26,11 @@ export default function Projects() {
             <Icon as={RiOpenArmLine} h={10} w={10} />
           </Box>
           <Box pl={2}>
-            <Text textStyle="title">Proyectos</Text>
+            <Text fontSize="3xl" textStyle="title">
+              Proyectos
+            </Text>
             <Text
+              fontSize="md"
               sx={{
                 ".mainBox:hover &": {
                   color: "gray.800",

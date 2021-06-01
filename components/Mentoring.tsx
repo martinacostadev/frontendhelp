@@ -26,8 +26,11 @@ export default function Mentoring() {
           <Icon as={BiBrain} h={10} w={10} />
         </Box>
         <Box pl={2}>
-          <Text textStyle="title">Mentorías</Text>
+          <Text fontSize="3xl" textStyle="title">
+            Mentorías
+          </Text>
           <Text
+            fontSize="md"
             sx={{
               ".mainBox:hover &": {
                 color: "gray.800",

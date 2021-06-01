@@ -26,8 +26,11 @@ export default function Twitter() {
             <Icon as={ImTwitter} h={10} w={10} />
           </Box>
           <Box pl={2}>
-            <Text textStyle="title">Twitter</Text>
+            <Text fontSize="3xl" textStyle="title">
+              Twitter
+            </Text>
             <Text
+              fontSize="md"
               sx={{
                 ".mainBox:hover &": {
                   color: "gray.800",

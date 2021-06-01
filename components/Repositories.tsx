@@ -26,8 +26,11 @@ export default function Repositories() {
             <Icon as={FiUploadCloud} color="white" h={8} w={8} />
           </Box>
           <Box pl={2}>
-            <Text textStyle="title">Repositorios</Text>
+            <Text fontSize="3xl" textStyle="title">
+              Repositorios
+            </Text>
             <Text
+              fontSize="md"
               sx={{
                 ".mainBox:hover &": {
                   color: "gray.800",

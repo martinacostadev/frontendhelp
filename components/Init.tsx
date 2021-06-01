@@ -21,9 +21,12 @@ export default function Init() {
             <Icon as={BsFillPlayFill} color="red" h={8} w={8} />
           </Box>
           <Box pl={2}>
-            <Text fontWeight="bold">Comienzo</Text>
+            <Text fontSize="3xl" fontWeight="bold">
+              Comienzo
+            </Text>
             <Text
               color="white"
+              fontSize="md"
               sx={{
                 ".mainBox:hover &": {
                   color: "black",

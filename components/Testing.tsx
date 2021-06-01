@@ -26,8 +26,11 @@ export default function Testing() {
             <Icon as={GrTest} color="white" h={8} w={8} />
           </Box>
           <Box pl={2}>
-            <Text textStyle="title">Testing</Text>
+            <Text fontSize="3xl" textStyle="title">
+              Testing
+            </Text>
             <Text
+              fontSize="md"
               sx={{
                 ".mainBox:hover &": {
                   color: "gray.800",

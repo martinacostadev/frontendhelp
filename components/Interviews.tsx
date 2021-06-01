@@ -26,8 +26,11 @@ export default function Interviews() {
           <Icon as={FaBookOpen} h={10} w={10} />
         </Box>
         <Box pl={2}>
-          <Text textStyle="title">Consejos Entrevistas</Text>
+          <Text fontSize="3xl" textStyle="title">
+            Consejos Entrevistas
+          </Text>
           <Text
+            fontSize="md"
             sx={{
               ".mainBox:hover &": {
                 color: "gray.800",

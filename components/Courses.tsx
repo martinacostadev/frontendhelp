@@ -25,8 +25,11 @@ export default function Courses() {
             <Icon as={AiOutlineLink} h={8} w={8} />
           </Box>
           <Box pl={2}>
-            <Text textStyle="title">Cursos</Text>
+            <Text fontSize="3xl" textStyle="title">
+              Cursos
+            </Text>
             <Text
+              fontSize="md"
               sx={{
                 ".mainBox:hover &": {
                   color: "gray.800",
@@ -34,7 +37,7 @@ export default function Courses() {
               }}
               textStyle="description"
             >
-              Platzi, Udemy, CodigoFacilito, EdTeam, Courseit, FreeCodeCamp
+              Platzi, Udemy, CodigoFacilito, EdTeam, Courseit
             </Text>
           </Box>
         </HStack>

@@ -26,8 +26,11 @@ export default function PracticeSites() {
             <Icon as={BsCodeSlash} h={8} w={8} />
           </Box>
           <Box pl={2}>
-            <Text textStyle="title">Sitios de Práctica</Text>
+            <Text fontSize="3xl" textStyle="title">
+              Sitios de Práctica
+            </Text>
             <Text
+              fontSize="md"
               sx={{
                 ".mainBox:hover &": {
                   color: "gray.800",

@@ -25,8 +25,11 @@ export default function Resources() {
             <Icon as={AiOutlineLink} h={8} w={8} />
           </Box>
           <Box pl={2}>
-            <Text textStyle="title">Recursos</Text>
+            <Text fontSize="3xl" textStyle="title">
+              Recursos
+            </Text>
             <Text
+              fontSize="md"
               sx={{
                 ".mainBox:hover &": {
                   color: "gray.800",
@@ -34,7 +37,7 @@ export default function Resources() {
               }}
               textStyle="description"
             >
-              W3Schools, Freecodecamp, Developer Mozilla, Pure React
+              W3Schools, Freecodecamp, Developer Mozilla
             </Text>
           </Box>
         </HStack>

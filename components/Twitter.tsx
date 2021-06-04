@@ -14,7 +14,7 @@ export default function Twitter() {
         borderRadius={12}
         borderWidth={1}
         className="mainBox"
-        p={4}
+        p={{base: 0, md: 4}}
       >
         <HStack>
           <Box

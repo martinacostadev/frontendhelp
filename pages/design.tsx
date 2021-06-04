@@ -1,7 +1,8 @@
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {Container, Box, Text, Link, Grid, Heading} from "@chakra-ui/react";
-import Head from "next/head";
+import {Container, Box, Text, Link, Grid} from "@chakra-ui/react";
 import React from "react";
+
+import PageTitle from "../components/PageTitle";
 
 export default function start() {
   return (
@@ -22,14 +23,7 @@ export default function start() {
         px={8}
         py={4}
       >
-        <Head>
-          <title>Diseño UX/UI - FrontEnd Help</title>
-        </Head>
-        <Box mt={4}>
-          <Heading as="h3" size="lg">
-            Diseño UX/UI
-          </Heading>
-        </Box>
+        <PageTitle title="Diseño UX/UI" />
 
         <Box my={6}>
           <Link isExternal href="https://www.neoland.es/blog/que-es-el-ux-ui-design">

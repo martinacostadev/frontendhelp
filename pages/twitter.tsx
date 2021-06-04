@@ -1,7 +1,7 @@
-import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {Container, Box, Text, Link, Grid, Heading, WrapItem, Avatar, Stack} from "@chakra-ui/react";
-import Head from "next/head";
+import {Container, Box, Text, Link, WrapItem, Avatar, Stack} from "@chakra-ui/react";
 import React from "react";
+
+import PageTitle from "../components/PageTitle";
 
 export default function start() {
   return (
@@ -20,16 +20,9 @@ export default function start() {
         boxShadow="dark-lg"
         my={4}
         px={8}
-        py={4}
+        py={{base: 0, md: 4}}
       >
-        <Head>
-          <title>Twitter - FrontEnd Help</title>
-        </Head>
-        <Box mt={4}>
-          <Heading as="h3" size="lg">
-            Twitter
-          </Heading>
-        </Box>
+        <PageTitle title="Twitter" />
 
         <Box my={8}>
           <Text fontSize="lg" fontWeight="bold">

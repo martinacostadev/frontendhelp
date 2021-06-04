@@ -1,7 +1,9 @@
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {Container, Box, Text, Link, Grid, Heading} from "@chakra-ui/react";
+import {Container, Box, Text, Link, Grid} from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
+
+import PageTitle from "../components/PageTitle";
 
 export default function Podcasts() {
   return (
@@ -22,16 +24,9 @@ export default function Podcasts() {
         px={8}
         py={4}
       >
-        <Head>
-          <title>Podcasts - FrontEnd Help</title>
-        </Head>
-        <Box mt={4}>
-          <Heading as="h3" size="lg">
-            Podcasts
-          </Heading>
-        </Box>
+        <PageTitle title="Podcasts" />
 
-        <Grid gap={4} mt={4}>
+        <Grid gap={4} mt={6}>
           <Link isExternal href="https://open.spotify.com/show/5uRPZ5r7bRkW29c5AkppXq">
             <Text fontSize="xl" mt={2}>
               DevRock <ExternalLinkIcon mx="2px" />

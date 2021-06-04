@@ -1,21 +1,10 @@
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {
-  Container,
-  Box,
-  Text,
-  Link,
-  Grid,
-  Heading,
-  List,
-  ListItem,
-  ListIcon,
-  Flex,
-  HStack,
-} from "@chakra-ui/react";
-import Head from "next/head";
+import {Container, Box, Text, Link, Grid, Heading, List, ListIcon, HStack} from "@chakra-ui/react";
 import React from "react";
 import {FaYoutube} from "react-icons/fa";
 import {ImTwitch} from "react-icons/im";
+
+import PageTitle from "../components/PageTitle";
 
 export default function start() {
   return (
@@ -36,14 +25,7 @@ export default function start() {
         px={8}
         py={4}
       >
-        <Head>
-          <title>Canales YouTube/Twitch - FrontEnd Help</title>
-        </Head>
-        <Box mt={4}>
-          <Heading as="h3" size="lg">
-            Canales YouTube/Twitch
-          </Heading>
-        </Box>
+        <PageTitle title="Canales YouTube/Twitch" />
 
         <Box my={8}>
           <Text fontSize="lg" fontWeight="bold">

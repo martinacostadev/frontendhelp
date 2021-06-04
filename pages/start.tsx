@@ -1,7 +1,8 @@
 import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {Container, Box, Grid, Text, Link, Heading} from "@chakra-ui/react";
-import Head from "next/head";
+import {Container, Box, Grid, Text, Link} from "@chakra-ui/react";
 import React from "react";
+
+import PageTitle from "../components/PageTitle";
 
 export default function start() {
   return (
@@ -22,15 +23,9 @@ export default function start() {
         px={8}
         py={4}
       >
-        <Head>
-          <title>HTML, CSS y JavaScript - FrontEnd Help</title>
-        </Head>
-        <Box mt={2}>
-          <Heading as="h3" size="lg">
-            Comienzo
-          </Heading>
-          <Text textStyle="descripcion">HTML, CSS y JavaScript: semantic, CSS Flex y Grid.</Text>
-        </Box>
+        <PageTitle title="Comienzo" />
+
+        <Text textStyle="descripcion">HTML, CSS y JavaScript: semantic, CSS Flex y Grid.</Text>
 
         <Box mt={4}>
           <Text>

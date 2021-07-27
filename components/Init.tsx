@@ -6,15 +6,12 @@ export default function Init() {
   return (
     <Link href="/start">
       <Box
-        _hover={{
-          background: "white",
-          color: "black",
-        }}
         bgGradient="linear(to-b, blue.500, blue.300)"
         borderRadius={12}
         className="mainBox"
         color="white"
         p={4}
+        style={{cursor: "pointer"}}
       >
         <HStack>
           <Box bg={"white"} borderRadius={"100%"} color={"blue.400"} p={4}>
@@ -24,16 +21,7 @@ export default function Init() {
             <Text fontSize="3xl" fontWeight="bold">
               Comienzo
             </Text>
-            <Text
-              color="white"
-              fontSize="md"
-              sx={{
-                ".mainBox:hover &": {
-                  color: "black",
-                },
-              }}
-              textStyle="description"
-            >
+            <Text color="white" fontSize="md" textStyle="description">
               HTML, CSS y JavaScript: semantic, CSS flex and grid
             </Text>
           </Box>

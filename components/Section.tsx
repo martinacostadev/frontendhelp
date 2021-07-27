@@ -1,26 +1,25 @@
 import {Box, HStack, Text, Icon} from "@chakra-ui/react";
 import Link from "next/link";
-import {AiFillTool} from "react-icons/ai";
 
-export default function Frameworks() {
+export default function Section({page, icon, title, description, gradientFrom, gradientTo}) {
   return (
-    <Link href="/frameworks">
+    <Link href={page}>
       <Box bg={"white"} borderRadius={12} borderWidth={1} p={4} style={{cursor: "pointer"}}>
         <HStack>
           <Box
-            bgGradient="linear(to-b, green.500, green.300)"
+            bgGradient={`linear(to-b, ${gradientFrom}, ${gradientTo})`}
             borderRadius={"100%"}
             color={"white"}
             p={4}
           >
-            <Icon as={AiFillTool} h={8} w={8} />
+            <Icon as={icon} h={8} w={8} />
           </Box>
           <Box pl={2}>
             <Text fontSize="3xl" textStyle="title">
-              Frameworks
+              {title}
             </Text>
             <Text fontSize={{base: "26px", md: "16px"}} textStyle="description">
-              React, Angular, Vue, Svelt, Ember
+              {description}
             </Text>
           </Box>
         </HStack>

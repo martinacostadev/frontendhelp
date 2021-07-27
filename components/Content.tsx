@@ -1,45 +1,160 @@
 import {SimpleGrid, Box} from "@chakra-ui/react";
 import React from "react";
+import {AiFillTool, AiOutlineCloudServer} from "react-icons/ai";
+import {AiOutlineLink} from "react-icons/ai";
+import {BiBrain} from "react-icons/bi";
+import {BsCodeSlash, BsFillMicFill, BsFillPlayFill} from "react-icons/bs";
+import {BsPersonBoundingBox} from "react-icons/bs";
+import {CgScreen} from "react-icons/cg";
+import {FaBookOpen, FaPeopleCarry} from "react-icons/fa";
+import {FiUploadCloud} from "react-icons/fi";
+import {GrTest} from "react-icons/gr";
+import {ImTwitter} from "react-icons/im";
+import {RiOpenArmLine} from "react-icons/ri";
+import {VscPaintcan} from "react-icons/vsc";
 
-import Channels from "./Channels";
-import Communities from "./Communities";
-import Courses from "./Courses";
-import Design from "./Design";
-import Frameworks from "./Frameworks";
-import Hostings from "./Hostings";
-import Init from "./Init";
-import Interviews from "./Interviews";
-import Jobs from "./Jobs";
-import Mentoring from "./Mentoring";
-import Podcasts from "./Podcasts";
-import PracticeSites from "./PracticeSites";
-import Projects from "./Projects";
-import Repositories from "./Repositories";
-import Resources from "./Resources";
-import Testing from "./Testing";
-import Twitter from "./Twitter";
+import Section from "./Section";
 
 export default function Content() {
   return (
     <>
       <SimpleGrid columns={{base: 1, md: 2}} gap={6} py={4}>
-        <Init />
-        <Frameworks />
-        <Repositories />
-        <Design />
-        <Testing />
-        <Courses />
-        <Communities />
-        <Channels />
-        <Podcasts />
-        <Resources />
-        <PracticeSites />
-        <Hostings />
-        <Twitter />
-        <Projects />
-        <Interviews />
-        <Jobs />
-        <Mentoring />
+        <Section
+          description="HTML, CSS y JavaScript: semantic, CSS flex and grid"
+          gradientFrom="blue.500"
+          gradientTo="blue.300"
+          icon={BsFillPlayFill}
+          page="start"
+          title="Comienzo"
+        />
+        <Section
+          description="React, Angular, Vue, Svelt, Ember"
+          gradientFrom="green.500"
+          gradientTo="green.300"
+          icon={AiFillTool}
+          page="frameworks"
+          title="Frameworks"
+        />
+        <Section
+          description="Github, GitLab, Bitbucket"
+          gradientFrom="yellow.500"
+          gradientTo="yellow.300"
+          icon={FiUploadCloud}
+          page="repositories"
+          title="Repositorios"
+        />
+        <Section
+          description="Figma, mobbin.design, dribble.com"
+          gradientFrom="red.500"
+          gradientTo="red.300"
+          icon={VscPaintcan}
+          page="design"
+          title="Diseño UX/UI"
+        />
+        <Section
+          description="jest, react-testing-library, cypress y enzyme"
+          gradientFrom="purple.500"
+          gradientTo="purple.300"
+          icon={GrTest}
+          page="testing"
+          title="Testing"
+        />
+        <Section
+          description="Platzi, Udemy, CodigoFacilito, EdTeam, Courseit"
+          gradientFrom="gray.800"
+          gradientTo="gray.600"
+          icon={AiOutlineLink}
+          page="courses"
+          title="Cursos"
+        />
+        <Section
+          description="FrontEndCafe, Escuela Dev Rock, CodeAr"
+          gradientFrom="orange.500"
+          gradientTo="orange.300"
+          icon={FaPeopleCarry}
+          page="comunities"
+          title="Comunidades"
+        />
+        <Section
+          description="Midudev, GoncyPozzo, EscuelaDevRock y más!"
+          gradientFrom="cyan.500"
+          gradientTo="cyan.300"
+          icon={CgScreen}
+          page="channels"
+          title="Canales YouTube/Twitch"
+        />
+        <Section
+          description="DevRock, Midudev, WeCodeSign"
+          gradientFrom="gray.800"
+          gradientTo="gray.600"
+          icon={BsFillMicFill}
+          page="podcasts"
+          title="Podcasts"
+        />
+        <Section
+          description="W3Schools, Freecodecamp, Developer Mozilla"
+          gradientFrom="gray.800"
+          gradientTo="gray.600"
+          icon={AiOutlineLink}
+          page="resources"
+          title="Recursos"
+        />
+        <Section
+          description="Codewars, FrontEndMentor, Codepen"
+          gradientFrom="teal.500"
+          gradientTo="teal.300"
+          icon={BsCodeSlash}
+          page="practicesites"
+          title="Sitios de Práctica"
+        />
+        <Section
+          description="Vercel, Heroku, Netlify, DigitalOcean"
+          gradientFrom="blackAlpha.500"
+          gradientTo="blackAlpha.300"
+          icon={AiOutlineCloudServer}
+          page="hostings"
+          title="Hostings"
+        />
+        <Section
+          description="Midudev, Victoruxui, Goncy, ..."
+          gradientFrom="twitter.500"
+          gradientTo="twitter.300"
+          icon={ImTwitter}
+          page="twitter"
+          title="Twitter"
+        />
+        <Section
+          description="Open Source"
+          gradientFrom="facebook.500"
+          gradientTo="facebook.300"
+          icon={RiOpenArmLine}
+          page="projects"
+          title="Proyectos"
+        />
+        <Section
+          description="Próximamente..."
+          gradientFrom="facebook.500"
+          gradientTo="facebook.300"
+          icon={FaBookOpen}
+          page="#"
+          title="Consejos Entrevistas"
+        />
+        <Section
+          description="Próximamente..."
+          gradientFrom="facebook.500"
+          gradientTo="facebook.300"
+          icon={BsPersonBoundingBox}
+          page="#"
+          title="Empleos"
+        />
+        <Section
+          description="Próximamente..."
+          gradientFrom="facebook.500"
+          gradientTo="facebook.300"
+          icon={BiBrain}
+          page="#"
+          title="Mentorías"
+        />
       </SimpleGrid>
       <Box align="center" my={4}>
         Made with ❤ by{" "}

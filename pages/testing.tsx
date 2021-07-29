@@ -71,7 +71,7 @@ export default function start() {
             </Box>
           </Link>
 
-          <Link isExternal href="https://jestjs.io/" target="_blank">
+          <Link isExternal href="https://www.cypress.io/" target="_blank">
             <Box
               _hover={{
                 background: "white",
@@ -103,7 +103,7 @@ export default function start() {
             </Box>
           </Link>
 
-          <Link isExternal href="https://jestjs.io/" target="_blank">
+          <Link isExternal href="https://enzymejs.github.io/enzyme/" target="_blank">
             <Box
               _hover={{
                 background: "white",
@@ -117,7 +117,14 @@ export default function start() {
             >
               <HStack>
                 <Box bg={"white"} borderRadius={"100%"} color={"blue.400"}>
-                  <Text h={16} p={2} w={16} />
+                  <Image
+                    alt="Enzime"
+                    borderRadius="full"
+                    h={16}
+                    p={2}
+                    src="https://avatars.githubusercontent.com/u/60945302?s=200&v=4"
+                    w={16}
+                  />
                 </Box>
                 <Box pl={2}>
                   <Text fontSize="xl" fontWeight="bold">

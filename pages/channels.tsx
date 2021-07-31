@@ -49,6 +49,12 @@ export default function start() {
               <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>
+          <Link isExternal href="https://youtube.gonzalopozzo.com/">
+            <Text fontSize="xl" mt={2}>
+              Goncy Pozzo
+              <ExternalLinkIcon mx="2px" />
+            </Text>
+          </Link>
           <Link isExternal href="https://www.youtube.com/user/jonatanariste/videos">
             <Text fontSize="xl" mt={2}>
               Escuela Dev Rock <ExternalLinkIcon mx="2px" />

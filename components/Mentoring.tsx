@@ -38,7 +38,7 @@ export default function Mentoring() {
             }}
             textStyle="description"
           >
-            Próximamente...
+            Personas que te ayudan con tus consultas
           </Text>
         </Box>
       </HStack>

@@ -132,27 +132,27 @@ export default function Content() {
           title="Proyectos"
         />
         <Section
-          description="Próximamente..."
+          description="CV, carta presentación, LinkedIn ..."
           gradientFrom="facebook.500"
           gradientTo="facebook.300"
           icon={FaBookOpen}
-          page="#"
+          page="advices"
           title="Consejos Entrevistas"
         />
         <Section
-          description="Próximamente..."
+          description="Búsquedas IT"
           gradientFrom="facebook.500"
           gradientTo="facebook.300"
           icon={BsPersonBoundingBox}
-          page="#"
+          page="jobs"
           title="Empleos"
         />
         <Section
-          description="Próximamente..."
+          description="Personas que te ayudan con tus consultas"
           gradientFrom="facebook.500"
           gradientTo="facebook.300"
           icon={BiBrain}
-          page="#"
+          page="mentoring"
           title="Mentorías"
         />
       </SimpleGrid>

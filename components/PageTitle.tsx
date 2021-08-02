@@ -6,12 +6,14 @@ import {IoMdArrowRoundBack} from "react-icons/io";
 
 export default function PageTitle(props) {
   const router = useRouter();
-  const {title} = props;
+  const {title, description = ""} = props;
 
   return (
     <>
       <Head>
         <title>{title} - FrontEnd Help</title>
+        <meta content={title} property="og:title" />
+        <meta content={description} name="description" />
       </Head>
 
       <Box mt={4}>

@@ -6,7 +6,7 @@ import {BiBrain} from "react-icons/bi";
 import {BsCodeSlash, BsFillMicFill, BsFillPlayFill} from "react-icons/bs";
 import {BsPersonBoundingBox} from "react-icons/bs";
 import {CgScreen} from "react-icons/cg";
-import {FaBookOpen, FaPeopleCarry} from "react-icons/fa";
+import {FaBookOpen, FaPeopleCarry, FaQuestion} from "react-icons/fa";
 import {FiUploadCloud} from "react-icons/fi";
 import {GrTest} from "react-icons/gr";
 import {ImTwitter} from "react-icons/im";
@@ -19,6 +19,14 @@ export default function Content() {
   return (
     <>
       <SimpleGrid columns={{base: 1, md: 2}} gap={6} py={4}>
+        <Section
+          description="Las más comunes de quienes comienzan en Frontend"
+          gradientFrom="blue.500"
+          gradientTo="blue.300"
+          icon={FaQuestion}
+          page="faq"
+          title="Preguntas frecuentes"
+        />
         <Section
           description="HTML, CSS y JavaScript: semantic, CSS flex and grid"
           gradientFrom="blue.500"

@@ -13,7 +13,7 @@ import {ImTwitter} from "react-icons/im";
 import {RiOpenArmLine} from "react-icons/ri";
 import {VscPaintcan} from "react-icons/vsc";
 import {FcIdea} from "react-icons/fc";
-import {GiRoad} from "react-icons/gi";
+import {GiRoad, GiSkills} from "react-icons/gi";
 
 import Section from "./Section";
 
@@ -158,6 +158,15 @@ export default function Content() {
           icon={RiOpenArmLine}
           page="projects"
           title="Proyectos"
+        />
+        <Section
+          description="Habilidades blandas"
+          gradientFrom="facebook.500"
+          gradientTo="facebook.300"
+          icon={GiSkills}
+          page="softskills"
+          title="Soft Skills"
+          isNew
         />
         <Section
           description="CV, Carta de Presentación, LinkedIn y más"

@@ -26,6 +26,16 @@ export default function Jobs() {
         <PageTitle title="Empleos" />
 
         <Grid gap={4} mt={4}>
+          <Text mt={2}>
+            Cualquier sitio es válido para buscar empleo: redes sociales (en especial Twitter), comunidades de Discord, Telegram, etc.
+          </Text>
+
+          <Link isExternal href="https://www.linkedin.com/">
+            <Text fontSize="xl" fontWeight="bold" mt={2}>
+              LinkedIn <ExternalLinkIcon mx="2px" />
+            </Text>
+          </Link>
+
           <Link isExternal href="https://trabajos.gonzalopozzo.com/">
             <Text fontSize="xl" fontWeight="bold" mt={2}>
               Joncy hecho por @goncy <ExternalLinkIcon mx="2px" />

@@ -169,7 +169,7 @@ export default function Content() {
           isNew
         />
         <Section
-          description="CV, Carta de Presentación, LinkedIn y más"
+          description="CV, Carta de Presentación, LinkedIn y más!"
           gradientFrom="facebook.500"
           gradientTo="facebook.300"
           icon={FaBookOpen}
@@ -194,7 +194,7 @@ export default function Content() {
         />
       </SimpleGrid>
       <Box align="center" my={4}>
-        Made with ❤ by{" "}
+        Hecho con ❤ por{" "}
         <a href="https://twitter.com/martindevaluado" rel="noreferrer" target="_blank">
           @martindevaluado
         </a>

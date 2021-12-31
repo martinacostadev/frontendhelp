@@ -38,7 +38,7 @@ export default function Twitter() {
               }}
               textStyle="description"
             >
-              Midudev, Victoruxui, Goncy
+              Gente a la cual seguir para aprender y/o consultar.
             </Text>
           </Box>
         </HStack>

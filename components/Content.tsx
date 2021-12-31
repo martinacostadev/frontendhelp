@@ -12,6 +12,7 @@ import {GrTest} from "react-icons/gr";
 import {ImTwitter} from "react-icons/im";
 import {RiOpenArmLine} from "react-icons/ri";
 import {VscPaintcan} from "react-icons/vsc";
+import {FcIdea} from "react-icons/fc";
 
 import Section from "./Section";
 
@@ -98,6 +99,15 @@ export default function Content() {
           icon={BsFillMicFill}
           page="podcasts"
           title="Podcasts"
+        />
+        <Section
+          description="Para practicar y agregar en Portfolio"
+          gradientFrom="teal.500"
+          gradientTo="teal.300"
+          icon={FcIdea}
+          page="projectsexample"
+          title="Proyectos de ejemplo"
+          isNew
         />
         <Section
           description="W3Schools, Freecodecamp, Developer Mozilla"

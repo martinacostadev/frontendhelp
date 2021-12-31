@@ -54,6 +54,31 @@ export default function Podcasts() {
           </Flex>
 
           <Text mb={2}>
+          La idea es que experimentes:
+          </Text>
+          <Text>
+          ✅ Maquetado y ser detallista en esto para que quede prolijo y lindo.
+          </Text>
+          <Text>
+          ✅ Hacer pequeñas y simples animaciones.
+          </Text>
+          <Text>
+          ✅ Prestar atención al contraste de colores entre los fondos y el color de fuente/letra.
+          </Text>
+          <Text>
+          ✅ Interactuar con una API.
+          </Text>
+          <Text>
+          ✅ Organizar tu proyecto por carpetas y archivos prolijos.
+          </Text>
+          <Text>
+          ✅ Crear, editar y eliminar registros.
+          </Text>
+          <Text>
+          ✅ Búsquedas y filtros.
+          </Text>
+
+          <Text mt={4} mb={2}>
             Recomendación: prestale atención a la <Text as='mark'>UI (User Interface / Interfaz de Usuario) y UX (User Experience / Experiencia de Usuario)</Text>, por lo que <Text as='u'>es importante que el proyecto sea intuitivo, fácil de usar, de entender y demás</Text>.
           </Text>
 
@@ -61,7 +86,7 @@ export default function Podcasts() {
             Podés sacar inspiración de muchos sitios para imitar el diseño UI/UX. Algunos sitios:
           </Text>
 
-          <Flex flexDirection='column' mb={4}>
+          <Flex flexDirection='column' mb={8}>
             <Link href='https://dribbble.com/' isExternal mb={2}>
               Dribbble <ExternalLinkIcon mx='2px' />
             </Link>

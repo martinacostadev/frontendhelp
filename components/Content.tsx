@@ -13,6 +13,7 @@ import {ImTwitter} from "react-icons/im";
 import {RiOpenArmLine} from "react-icons/ri";
 import {VscPaintcan} from "react-icons/vsc";
 import {FcIdea} from "react-icons/fc";
+import {GiRoad} from "react-icons/gi";
 
 import Section from "./Section";
 
@@ -116,6 +117,15 @@ export default function Content() {
           icon={AiOutlineLink}
           page="resources"
           title="Recursos"
+        />
+        <Section
+          description="Ruta para aprender"
+          gradientFrom="gray.800"
+          gradientTo="gray.600"
+          icon={GiRoad}
+          page="roadmap"
+          title="Roadmap"
+          isNew
         />
         <Section
           description="Codewars, FrontEndMentor, Codepen"

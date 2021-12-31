@@ -33,9 +33,9 @@ export default function start() {
         </Box>
 
         <Grid gap={4}>
-          <Link isExternal href="https://www.w3schools.com/">
-            <Text fontSize="xl" fontWeight="bold">
-              W3Schools <ExternalLinkIcon mx="2px" />
+          <Link isExternal href="https://developer.mozilla.org/es/">
+            <Text fontSize="xl" fontWeight="bold" mt={2}>
+              Developer Mozilla <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>
           <Link isExternal href="https://www.freecodecamp.org/">
@@ -43,14 +43,19 @@ export default function start() {
               Freecodecamp <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>
-          <Link isExternal href="https://developer.mozilla.org/es/">
+          <Link isExternal href="https://es.javascript.info/">
             <Text fontSize="xl" fontWeight="bold" mt={2}>
-              Developer Mozilla <ExternalLinkIcon mx="2px" />
+              JavaScript Info <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>
           <Link isExternal href="https://www.purereact.com/">
             <Text fontSize="xl" fontWeight="bold" mt={2}>
               Pure React <ExternalLinkIcon mx="2px" />
+            </Text>
+          </Link>
+          <Link isExternal href="https://www.w3schools.com/">
+            <Text fontSize="xl" fontWeight="bold">
+              W3Schools <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>
         </Grid>

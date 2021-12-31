@@ -160,7 +160,7 @@ export default function Content() {
           title="Proyectos"
         />
         <Section
-          description="CV, carta presentación, LinkedIn ..."
+          description="CV, Carta de Presentación, LinkedIn y más"
           gradientFrom="facebook.500"
           gradientTo="facebook.300"
           icon={FaBookOpen}

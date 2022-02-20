@@ -41,6 +41,12 @@ export default function Jobs() {
               Joncy hecho por @goncy <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>
+
+          <Link isExternal href="https://www.empleosit.com.ar/">
+            <Text fontSize="xl" fontWeight="bold" mt={2}>
+              EmpleosIT <ExternalLinkIcon mx="2px" />
+            </Text>
+          </Link>
         </Grid>
       </Container>
     </Box>

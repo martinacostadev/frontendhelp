@@ -14,6 +14,7 @@ import {RiOpenArmLine} from "react-icons/ri";
 import {VscPaintcan} from "react-icons/vsc";
 import {FcIdea} from "react-icons/fc";
 import {GiRoad, GiSkills} from "react-icons/gi";
+import {SiJavascript} from "react-icons/si";
 
 import Section from "./Section";
 
@@ -86,12 +87,30 @@ export default function Content() {
           title="Comunidades"
         />
         <Section
+          description="Que se usan comúnmente en el día"
+          gradientFrom="yellow.500"
+          gradientTo="yellow.500"
+          icon={SiJavascript}
+          page="javascriptconcepts"
+          title="Conceptos más utilizados en JavaScript"
+          isNew
+        />
+        <Section
           description="Midudev, GoncyPozzo, EscuelaDevRock y más!"
           gradientFrom="cyan.500"
           gradientTo="cyan.300"
           icon={CgScreen}
           page="channels"
           title="Canales YouTube/Twitch"
+        />
+        <Section
+          description="Consejos para trabajar mejor"
+          gradientFrom="teal.500"
+          gradientTo="teal.300"
+          icon={BiBrain}
+          page="productivity"
+          title="Productividad"
+          isNew
         />
         <Section
           description="DevRock, Midudev, WeCodeSign"

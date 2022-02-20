@@ -7,7 +7,7 @@ export default function Header() {
         ¿Por dónde empezar?
       </Text>
       <Text fontSize={{base: "24px", md: "18px"}} noOfLines={2} opacity="0.9" pb={2}>
-        Recomendaciones acerca de como comenzar y/o avanzar en el mundo de Frontend.
+        Recomendaciones acerca de cómo comenzar y/o avanzar en el mundo Frontend.
       </Text>
     </Box>
   );

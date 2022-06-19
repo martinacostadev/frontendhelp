@@ -1,26 +1,26 @@
-import {Box, HStack, Text, Icon} from "@chakra-ui/react";
-import Link from "next/link";
-import {FaBookOpen} from "react-icons/fa";
+import { Box, HStack, Icon, Text } from '@chakra-ui/react'
+import { FaBookOpen } from 'react-icons/fa'
 
 export default function Interviews() {
   return (
     // <Link href="#">
     <Box
       _hover={{
-        background: "teal.400",
-        color: "white",
+        background: 'teal.400',
+        color: 'white',
       }}
-      bg={"white"}
+      bg={'white'}
       borderRadius={12}
       borderWidth={1}
+      borderColor={'#3a3a3a'}
       className="mainBox"
       p={4}
     >
       <HStack>
         <Box
           bgGradient="linear(to-b, facebook.500, facebook.300)"
-          borderRadius={"100%"}
-          color={"white"}
+          borderRadius={'100%'}
+          color={'white'}
           p={4}
         >
           <Icon as={FaBookOpen} h={10} w={10} />
@@ -32,8 +32,8 @@ export default function Interviews() {
           <Text
             fontSize="md"
             sx={{
-              ".mainBox:hover &": {
-                color: "gray.800",
+              '.mainBox:hover &': {
+                color: 'gray.800',
               },
             }}
             textStyle="description"
@@ -44,5 +44,5 @@ export default function Interviews() {
       </HStack>
     </Box>
     // </Link>
-  );
+  )
 }

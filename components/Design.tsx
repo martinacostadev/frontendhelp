@@ -1,4 +1,4 @@
-import { Box, HStack, Text, Icon } from '@chakra-ui/react'
+import { Box, HStack, Icon, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import { VscPaintcan } from 'react-icons/vsc'
 
@@ -13,6 +13,7 @@ export default function Design() {
         bg={'white'}
         borderRadius={12}
         borderWidth={1}
+        borderColor={'#3a3a3a'}
         className="mainBox"
         p={4}
       >

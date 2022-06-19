@@ -13,6 +13,7 @@ export default function Testing() {
         bg={'white'}
         borderRadius={12}
         borderWidth={1}
+        borderColor={'#3a3a3a'}
         className="mainBox"
         p={4}
       >

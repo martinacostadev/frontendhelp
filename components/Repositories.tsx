@@ -1,26 +1,27 @@
-import {Box, HStack, Text, Icon} from "@chakra-ui/react";
-import Link from "next/link";
-import {FiUploadCloud} from "react-icons/fi";
+import { Box, HStack, Icon, Text } from '@chakra-ui/react'
+import Link from 'next/link'
+import { FiUploadCloud } from 'react-icons/fi'
 
 export default function Repositories() {
   return (
     <Link href="/repositories">
       <Box
         _hover={{
-          background: "teal.400",
-          color: "white",
+          background: 'teal.400',
+          color: 'white',
         }}
-        bg={"white"}
+        bg={'white'}
         borderRadius={12}
         borderWidth={1}
+        borderColor={'#3a3a3a'}
         className="mainBox"
         p={4}
       >
         <HStack>
           <Box
             bgGradient="linear(to-b, yellow.500, yellow.300)"
-            borderRadius={"100%"}
-            color={"white"}
+            borderRadius={'100%'}
+            color={'white'}
             p={4}
           >
             <Icon as={FiUploadCloud} color="white" h={8} w={8} />
@@ -32,8 +33,8 @@ export default function Repositories() {
             <Text
               fontSize="md"
               sx={{
-                ".mainBox:hover &": {
-                  color: "gray.800",
+                '.mainBox:hover &': {
+                  color: 'gray.800',
                 },
               }}
               textStyle="description"
@@ -44,5 +45,5 @@ export default function Repositories() {
         </HStack>
       </Box>
     </Link>
-  );
+  )
 }

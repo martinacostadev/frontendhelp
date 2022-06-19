@@ -1,26 +1,26 @@
-import {Box, HStack, Text, Icon} from "@chakra-ui/react";
-import Link from "next/link";
-import {BiBrain} from "react-icons/bi";
+import { Box, HStack, Icon, Text } from '@chakra-ui/react'
+import { BiBrain } from 'react-icons/bi'
 
 export default function Mentoring() {
   return (
     // <Link href="#">
     <Box
       _hover={{
-        background: "teal.400",
-        color: "white",
+        background: 'teal.400',
+        color: 'white',
       }}
-      bg={"white"}
+      bg={'white'}
       borderRadius={12}
       borderWidth={1}
+      borderColor={'#3a3a3a'}
       className="mainBox"
       p={4}
     >
       <HStack>
         <Box
           bgGradient="linear(to-b, facebook.500, facebook.300)"
-          borderRadius={"100%"}
-          color={"white"}
+          borderRadius={'100%'}
+          color={'white'}
           p={4}
         >
           <Icon as={BiBrain} h={10} w={10} />
@@ -32,8 +32,8 @@ export default function Mentoring() {
           <Text
             fontSize="md"
             sx={{
-              ".mainBox:hover &": {
-                color: "gray.800",
+              '.mainBox:hover &': {
+                color: 'gray.800',
               },
             }}
             textStyle="description"
@@ -44,5 +44,5 @@ export default function Mentoring() {
       </HStack>
     </Box>
     // </Link>
-  );
+  )
 }

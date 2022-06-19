@@ -15,7 +15,7 @@ export default function start() {
       w="100%"
     >
       <Container
-        bgGradient="linear(to-tr, gray.300, gray.50)"
+        bgColor="background"
         borderRadius={12}
         boxShadow="dark-lg"
         my={4}
@@ -181,14 +181,14 @@ export default function start() {
               <Text ml={4}>Ale Esacrosa</Text>
             </WrapItem>
           </Link>
-          <Link isExternal href="https://twitter.com/martindevaluado">
+          <Link isExternal href="https://twitter.com/martinacostadev">
             <WrapItem alignContent="center" alignItems={"center"}>
               <Avatar
-                name="Martindevaluado"
+                name="martinacostadev"
                 size="lg"
                 src="https://pbs.twimg.com/profile_images/1325138680579674113/OZye7oj3_400x400.jpg"
               />
-              <Text ml={4}>Martindevaluado</Text>
+              <Text ml={4}>martinacostadev</Text>
             </WrapItem>
           </Link>
         </Stack>

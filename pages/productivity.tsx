@@ -16,7 +16,7 @@ export default function productivity() {
       w="100%"
     >
       <Container
-        bgGradient="linear(to-tr, gray.300, gray.50)"
+        bgColor="background"
         borderRadius={12}
         boxShadow="dark-lg"
         my={4}

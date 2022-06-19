@@ -1,16 +1,16 @@
-import {Box, HStack, Text, Icon} from "@chakra-ui/react";
-import Link from "next/link";
-import {VscPaintcan} from "react-icons/vsc";
+import { Box, HStack, Text, Icon } from '@chakra-ui/react'
+import Link from 'next/link'
+import { VscPaintcan } from 'react-icons/vsc'
 
 export default function Design() {
   return (
     <Link href="/design">
       <Box
         _hover={{
-          background: "blue.400",
-          color: "white",
+          background: 'blue.400',
+          color: 'white',
         }}
-        bg={"white"}
+        bg={'white'}
         borderRadius={12}
         borderWidth={1}
         className="mainBox"
@@ -19,8 +19,8 @@ export default function Design() {
         <HStack>
           <Box
             bgGradient="linear(to-b, red.500, red.300)"
-            borderRadius={"100%"}
-            color={"white"}
+            borderRadius={'100%'}
+            color={'white'}
             p={4}
           >
             <Icon as={VscPaintcan} h={8} w={8} />
@@ -32,17 +32,17 @@ export default function Design() {
             <Text
               fontSize="md"
               sx={{
-                ".mainBox:hover &": {
-                  color: "gray.800",
+                '.mainBox:hover &': {
+                  color: 'gray.800',
                 },
               }}
               textStyle="description"
             >
-              Figma, mobbin.design, dribble.com
+              Figma, mobbin.design, dribbble.com
             </Text>
           </Box>
         </HStack>
       </Box>
     </Link>
-  );
+  )
 }

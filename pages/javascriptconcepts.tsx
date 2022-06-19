@@ -16,7 +16,7 @@ export default function javascriptconcepts() {
       w="100%"
     >
       <Container
-        bgGradient="linear(to-tr, gray.300, gray.50)"
+        bgColor="background"
         borderRadius={12}
         boxShadow="dark-lg"
         my={4}
@@ -169,27 +169,6 @@ export default function javascriptconcepts() {
             src="img/javascriptconcepts/array.png"
             w={400}
           />
-
-          <Text fontSize="xl" fontWeight="bold" mt={14}>
-            ¿Qué es un array?
-          </Text>
-
-          <Link isExternal href="https://es.javascript.info/array" >
-            <Text fontWeight="bold" mt={4} mb={4}>
-              Explicación completa en JavaScript Info: <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          
-          <Text mb={4} mt={4} fontWeight="bold">
-            Ejemplo:
-          </Text>
-
-          <Image
-            alt="Array"
-            src="img/javascriptconcepts/array.png"
-            w={400}
-          />
-
 
           <Text fontSize="xl" fontWeight="bold" mt={14}>
             Métodos array

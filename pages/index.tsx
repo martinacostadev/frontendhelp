@@ -1,9 +1,7 @@
-import {Container} from "@chakra-ui/react";
-import Head from "next/head";
+import { Container } from '@chakra-ui/react'
+import Head from 'next/head'
 
-import Content from "../components/Content";
-import Header from "../components/Header";
-import Navbar from "../components/Navbar";
+import { Header, NavBar, Content } from 'components'
 
 export default function Home() {
   return (
@@ -11,11 +9,17 @@ export default function Home() {
       <Head>
         <title>Frontend Help</title>
       </Head>
-      <Container bg="gray.100" borderRadius={8} maxW="container.xl" minW="container.md" py={2}>
-        <Navbar />
+      <Container
+        bg="background"
+        borderRadius={8}
+        maxW="container.xl"
+        minW="container.md"
+        my={{ sm: 0, md: 8 }}
+      >
+        <NavBar />
         <Header />
         <Content />
       </Container>
     </>
-  );
+  )
 }

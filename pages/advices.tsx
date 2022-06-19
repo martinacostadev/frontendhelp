@@ -22,7 +22,7 @@ export default function Jobs() {
       w="100%"
     >
       <Container
-        bgGradient="linear(to-tr, gray.300, gray.50)"
+        bgColor="background"
         borderRadius={12}
         boxShadow="dark-lg"
         my={4}
@@ -87,7 +87,7 @@ export default function Jobs() {
 
           <Link isExternal href="https://www.youtube.com/watch?v=_g2kemGO5tY">
             <Text fontSize="xl" fontWeight="bold" mt={4}>
-              Más detalles y comentarios en video de @martindevaluado <ExternalLinkIcon mx="2px" />
+              Más detalles y comentarios en video de @martinacostadev <ExternalLinkIcon mx="2px" />
             </Text>
           </Link>
         </Grid>

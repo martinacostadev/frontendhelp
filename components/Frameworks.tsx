@@ -20,7 +20,7 @@ export default function Frameworks() {
               Frameworks
             </Text>
             <Text fontSize={{base: "26px", md: "16px"}} textStyle="description">
-              React, Angular, Vue, Svelt, Ember
+              React, Angular, Vue, Svelte, Ember
             </Text>
           </Box>
         </HStack>

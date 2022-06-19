@@ -1,7 +1,7 @@
 import { Container } from '@chakra-ui/react'
 import Head from 'next/head'
 
-import { Header, NavBar, Content } from 'components'
+import { Content, Header, MenuNavBar } from 'components'
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         minW="container.md"
         my={{ sm: 0, md: 8 }}
       >
-        <NavBar />
+        <MenuNavBar />
         <Header />
         <Content />
       </Container>

@@ -1,19 +1,19 @@
 // import {HamburgerIcon, CloseIcon} from "@chakra-ui/icons";
 import {
   Box,
+  Button,
   Flex,
+  Heading,
   HStack,
   Link,
-  Button,
   Menu,
   MenuButton,
-  MenuList,
-  MenuItem,
   MenuDivider,
-  useDisclosure,
-  useColorModeValue,
+  MenuItem,
+  MenuList,
   Stack,
-  Heading,
+  useColorModeValue,
+  useDisclosure,
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 
@@ -34,7 +34,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
   </Link>
 )
 
-export default function NavBar() {
+export default function MenuNavBar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (

@@ -1,7 +1,7 @@
-import { SimpleGrid, Box, Center } from '@chakra-ui/react'
+import { Box, Center, SimpleGrid } from '@chakra-ui/react'
 
-import Section from './Section'
 import { sections } from 'data/sections'
+import Section from './Section'
 
 export default function Content() {
   return (
@@ -16,6 +16,7 @@ export default function Content() {
             icon={section.icon}
             page={section.page}
             title={section.title}
+            isNew={section.isNew}
           />
         ))}
       </SimpleGrid>

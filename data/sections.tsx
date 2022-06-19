@@ -1,18 +1,21 @@
-import { AiFillTool, AiOutlineCloudServer } from 'react-icons/ai'
-import { AiOutlineLink } from 'react-icons/ai'
-import { BiBrain } from 'react-icons/bi'
-import { BsCodeSlash, BsFillMicFill, BsFillPlayFill } from 'react-icons/bs'
-import { BsPersonBoundingBox } from 'react-icons/bs'
+import { AiFillTool, AiOutlineCloudServer, AiOutlineLink } from 'react-icons/ai'
+import { BiBrain, BiTestTube } from 'react-icons/bi'
+import {
+  BsBook,
+  BsCodeSlash,
+  BsFillMicFill,
+  BsFillPlayFill,
+  BsPersonBoundingBox,
+} from 'react-icons/bs'
 import { CgScreen } from 'react-icons/cg'
 import { FaBookOpen, FaPeopleCarry, FaQuestion } from 'react-icons/fa'
+import { FcIdea } from 'react-icons/fc'
 import { FiUploadCloud } from 'react-icons/fi'
-import { BiTestTube } from 'react-icons/bi'
+import { GiRoad, GiSkills } from 'react-icons/gi'
 import { ImTwitter } from 'react-icons/im'
 import { RiOpenArmLine } from 'react-icons/ri'
-import { VscPaintcan } from 'react-icons/vsc'
-import { FcIdea } from 'react-icons/fc'
-import { GiRoad, GiSkills } from 'react-icons/gi'
 import { SiJavascript } from 'react-icons/si'
+import { VscPaintcan } from 'react-icons/vsc'
 
 export const sections = [
   {
@@ -56,7 +59,7 @@ export const sections = [
     title: 'Diseño UX/UI',
   },
   {
-    description: 'jest, react-testing-library, cypress y enzyme',
+    description: 'jest, react-testing-library, cypress, enzyme y vitest',
     gradientFrom: 'purple.500',
     gradientTo: 'purple.300',
     icon: BiTestTube,
@@ -203,5 +206,14 @@ export const sections = [
     icon: BiBrain,
     page: 'mentoring',
     title: 'Mentorías',
+  },
+  {
+    description: 'Para consultar rápidamente formas de escribir código',
+    gradientFrom: 'facebook.500',
+    gradientTo: 'facebook.300',
+    icon: BsBook,
+    page: 'cheatsheets',
+    title: 'Cheat Sheets',
+    isNew: true,
   },
 ]

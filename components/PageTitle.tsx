@@ -17,14 +17,14 @@ export default function PageTitle(props) {
 
       <Box mt={{ sm: 0, md: 4 }}>
         <Flex>
-          <Box py="8">
+          <Box py="4">
             <Heading as="h3" display="flex" size="lg">
               {title}
             </Heading>
           </Box>
           <Spacer />
           <Link onClick={() => router.back()}>
-            <Box py="8">
+            <Box py="4">
               <Heading as="h3" display="flex" size="lg">
                 <Icon as={IoMdArrowRoundBack} h={8} w={8} />
               </Heading>

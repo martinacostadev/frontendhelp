@@ -25,8 +25,8 @@ export default function start() {
         lo averigues en otro sitio o consultando a otras personas 😁.
       </Text>
 
-      <Box mt={4}>
-        <Text fontSize="xl" fontWeight="bold" mt={2}>
+      <Box mt={16}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           ¿Cualquiera puede programar?
         </Text>
         <Text mt={4}>
@@ -35,8 +35,8 @@ export default function start() {
         </Text>
       </Box>
 
-      <Box mt={4}>
-        <Text fontSize="xl" fontWeight="bold" mt={2}>
+      <Box mt={16}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           ¿Por dónde empiezo?
         </Text>
         <Text mt={4}>Hay muchas maneras, algunas de ellas:</Text>
@@ -61,8 +61,8 @@ export default function start() {
         </Text>
       </Box>
 
-      <Box mt={4}>
-        <Text fontSize="xl" fontWeight="bold" mt={2}>
+      <Box mt={16}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           ¿Sirven los Bootcamp?
         </Text>
         <Text mt={4}>
@@ -78,8 +78,8 @@ export default function start() {
         </Text>
       </Box>
 
-      <Box mt={4}>
-        <Text fontSize="xl" fontWeight="bold" mt={2}>
+      <Box mt={16}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           ¿Cuál es el mejor lenguaje para comenzar?
         </Text>
         <Text mt={4}>
@@ -89,8 +89,8 @@ export default function start() {
         </Text>
       </Box>
 
-      <Box mt={4}>
-        <Text fontSize="xl" fontWeight="bold" mt={2}>
+      <Box mt={16}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           ¿Puedo empezar a programar teniendo más de 25 años?
         </Text>
         <Text mt={4}>
@@ -102,8 +102,8 @@ export default function start() {
         </Text>
       </Box>
 
-      <Box mt={4}>
-        <Text fontSize="xl" fontWeight="bold" mt={2}>
+      <Box mt={16}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           ¿Qué proyectos puedo hacer para mi portfolio?
         </Text>
         <Text mt={4}>
@@ -117,8 +117,8 @@ export default function start() {
         </Text>
       </Box>
 
-      <Box mt={4}>
-        <Text fontSize="xl" fontWeight="bold" mt={2}>
+      <Box mt={16}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           ¿Debo saber backend?
         </Text>
         <Text mt={4}>
@@ -128,8 +128,8 @@ export default function start() {
         </Text>
       </Box>
 
-      <Box mt={4}>
-        <Text fontSize="xl" fontWeight="bold" mt={2}>
+      <Box mt={16}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           ¿Qué es full stack?
         </Text>
         <Text mt={4}>
@@ -139,8 +139,8 @@ export default function start() {
         </Text>
       </Box>
 
-      <Box mt={4}>
-        <Text fontSize="xl" fontWeight="bold" mt={2}>
+      <Box mt={16}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           ¿Qué es una API?
         </Text>
         <Text mt={4}>
@@ -153,8 +153,8 @@ export default function start() {
         </Text>
       </Box>
 
-      <Box mt={4}>
-        <Text fontSize="xl" fontWeight="bold" mt={2}>
+      <Box mt={16}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           ¿Debo saber testing?
         </Text>
         <Text mt={4}>
@@ -166,8 +166,8 @@ export default function start() {
         </Text>
       </Box>
 
-      <Box mt={4}>
-        <Text fontSize="xl" fontWeight="bold" mt={2}>
+      <Box mt={16}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           ¿Cómo busco trabajo?
         </Text>
         <Text mt={4}>
@@ -179,9 +179,9 @@ export default function start() {
         </Text>
       </Box>
 
-      <Box mt={4}>
-        <Text fontSize="xl" fontWeight="bold" mt={2}>
-          ¿Cuál es el lenguaje de programación con más demanda laboral en 2021?
+      <Box mt={16}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
+          ¿Cuál es el lenguaje de programación con más demanda laboral en 2022?
         </Text>
         <Text mt={4}>
           La realidad es que hay demanda hasta en COBOL, un lenguaje de
@@ -193,8 +193,8 @@ export default function start() {
         </Text>
       </Box>
 
-      <Box mt={4}>
-        <Text fontSize="xl" fontWeight="bold" mt={2}>
+      <Box mt={16} pb={8}>
+        <Text fontSize="xl" fontWeight="bold" my={6}>
           ¿Puedo aprender varios lenguajes de programación?
         </Text>
         <Text mt={4}>

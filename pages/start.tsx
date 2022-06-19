@@ -1,4 +1,4 @@
-import { Container, Box, Text, SimpleGrid } from '@chakra-ui/react'
+import { Box, Container, SimpleGrid, Text } from '@chakra-ui/react'
 import ExternalLink from 'components/ExternalLink'
 import { startLinks } from 'data/startLinks'
 
@@ -21,10 +21,13 @@ export default function start() {
       bgColor="background"
       borderRadius={{ sm: 0, md: 12 }}
       boxShadow="dark-lg"
+      my={4}
+      px={8}
+      py={4}
     >
       <PageTitle title="Comienzo" />
 
-      <Text textStyle="descripcion">
+      <Text textStyle="descripcion" mb={4}>
         HTML, CSS y JavaScript: semantic, CSS Flex y Grid.
       </Text>
 
@@ -36,13 +39,13 @@ export default function start() {
         </Text>
       </Box>
 
-      <Text fontSize="xl" fontWeight="bold" my={6}>
+      <Text fontSize="xl" fontWeight="bold" mt={8} mb={2}>
         Recursos en Español
       </Text>
 
       <GridResource resources={spanishResources} />
 
-      <Text fontSize="xl" fontWeight="bold" my={6}>
+      <Text fontSize="xl" fontWeight="bold" mt={6} mb={2}>
         Recursos en Inglés
       </Text>
 

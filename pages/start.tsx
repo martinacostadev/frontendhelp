@@ -1,138 +1,52 @@
-import {ExternalLinkIcon} from "@chakra-ui/icons";
-import {Container, Box, Grid, Text, Link} from "@chakra-ui/react";
-import React from "react";
+import { Container, Box, Text, SimpleGrid } from '@chakra-ui/react'
+import ExternalLink from 'components/ExternalLink'
+import { startLinks } from 'data/startLinks'
 
-import PageTitle from "../components/PageTitle";
+import PageTitle from '../components/PageTitle'
+
+const GridResource = ({ resources }) => (
+  <SimpleGrid columns={{ sm: 1, md: 2 }} gap={6} py={4}>
+    {resources.map((link) => (
+      <ExternalLink key={link.text} href={link.href} text={link.text} />
+    ))}
+  </SimpleGrid>
+)
 
 export default function start() {
+  const spanishResources = startLinks.filter((links) => links.language === 'es')
+  const englishResources = startLinks.filter((links) => links.language === 'en')
+
   return (
-    <Box
-      backgroundAttachment="fixed"
-      backgroundImage="url('../static/background.svg')"
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
-      backgroundSize="cover"
-      py={4}
-      w="100%"
+    <Container
+      bgColor="background"
+      borderRadius={{ sm: 0, md: 12 }}
+      boxShadow="dark-lg"
     >
-      <Container
-        bgColor="background"
-        borderRadius={12}
-        boxShadow="dark-lg"
-        my={4}
-        px={8}
-        py={4}
-      >
-        <PageTitle title="Comienzo" />
+      <PageTitle title="Comienzo" />
 
-        <Text textStyle="descripcion">HTML, CSS y JavaScript: semantic, CSS Flex y Grid.</Text>
+      <Text textStyle="descripcion">
+        HTML, CSS y JavaScript: semantic, CSS Flex y Grid.
+      </Text>
 
-        <Box mt={4}>
-          <Text>
-            Las bases del frontend son comprender y utilizar correctamente la semántica de HTML, los
-            estilos de CSS y las diferentes propiedades y funciones de JavaScript.
-          </Text>
-        </Box>
-
-        <Text fontSize="xl" fontWeight="bold" my={6}>
-          Recursos en Español
+      <Box mt={4}>
+        <Text>
+          Las bases del frontend son comprender y utilizar correctamente la
+          semántica de HTML, los estilos de CSS y las diferentes propiedades y
+          funciones de JavaScript.
         </Text>
+      </Box>
 
-        <Grid gap={4} mt={4}>
-          <Link isExternal href="https://github.com/mrcodedev/frontend-developer-resources#-html">
-            <Text>
-              Inicio HTML <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          <Link isExternal href="https://desarrolloweb.com/articulos/que-es-el-dom.html">
-            <Text>
-              DOM <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          <Link isExternal href="https://www.wikiwand.com/es/HTML5">
-            <Text>
-              HTML5 <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          <Link isExternal href="https://www.wikiwand.com/es/JavaScript">
-            <Text>
-              JavaScript <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          <Link
-            isExternal
-            href="https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
-          >
-            <Text>
-              MDN Web JavaScript <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          <Link
-            isExternal
-            href="https://platzi.com/tutoriales/1339-fundamentos-javascript/1487-que-es-vanilla-js-o-javascript-puro/"
-          >
-            <Text>
-              JavaScript Vainilla <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          <Link isExternal href="https://www.youtube.com/watch?v=tP8JiVUiyDo">
-            <Text>
-              Map, Filter y Reducer <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          <Link isExternal href="https://developer.mozilla.org/es/docs/Web/CSS">
-            <Text>
-              MDN Docs CSS <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          <Link isExternal href="https://desarrolloweb.com/home/css">
-            <Text>
-              CSS - Desarrollo Web <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          <Link isExternal href="https://platzi.com/blog/5-tips-para-aprender-css/">
-            <Text>
-              5 tips CSS <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-        </Grid>
+      <Text fontSize="xl" fontWeight="bold" my={6}>
+        Recursos en Español
+      </Text>
 
-        <Text fontSize="xl" fontWeight="bold" my={6}>
-          Recursos en Inglés
-        </Text>
+      <GridResource resources={spanishResources} />
 
-        <Grid gap={4} mt={4}>
-          <Link isExternal flex={1} href="https://www.w3schools.com/">
-            <Text>
-              HTML, CSS y JavaScript <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          <Link
-            isExternal
-            flex={1}
-            href="https://learn.shayhowe.com/html-css/building-your-first-web-page/"
-          >
-            <Text>
-              First Web - ShayHowe <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          <Link isExternal href="https://www.youtube.com/watch?v=5g0x2xv3aHU">
-            <Text>
-              Explination Internet, HTML, CSS y JavaScript <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          <Link isExternal href="https://flexboxfroggy.com/">
-            <Text>
-              CSS Flexbox <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-          <Link isExternal href="https://cssgridgarden.com/#es">
-            <Text>
-              CSS Grid <ExternalLinkIcon mx="2px" />
-            </Text>
-          </Link>
-        </Grid>
-      </Container>
-    </Box>
-  );
+      <Text fontSize="xl" fontWeight="bold" my={6}>
+        Recursos en Inglés
+      </Text>
+
+      <GridResource resources={englishResources} />
+    </Container>
+  )
 }

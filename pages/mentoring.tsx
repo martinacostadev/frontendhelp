@@ -1,18 +1,12 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Container, Grid, Link, Text } from '@chakra-ui/react'
+import { Grid, Link, Text } from '@chakra-ui/react'
 
 import PageTitle from '../components/PageTitle'
+import Page from './Page'
 
 export default function Mentoring() {
   return (
-    <Container
-      bgColor="background"
-      borderRadius={12}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <PageTitle title="Mentorías" />
 
       <Grid gap={4} mt={4} pb={6}>
@@ -22,6 +16,6 @@ export default function Mentoring() {
           </Text>
         </Link>
       </Grid>
-    </Container>
+    </Page>
   )
 }

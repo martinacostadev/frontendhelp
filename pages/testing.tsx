@@ -1,27 +1,13 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import {
-  Box,
-  Container,
-  Grid,
-  HStack,
-  Image,
-  Link,
-  Text,
-} from '@chakra-ui/react'
+import { Box, Grid, HStack, Image, Link, Text } from '@chakra-ui/react'
 import Head from 'next/head'
 
 import PageTitle from '../components/PageTitle'
+import Page from './Page'
 
 export default function Testing() {
   return (
-    <Container
-      bgColor="background"
-      borderRadius={12}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <Head>
         <title>Testing - FrontEnd Help</title>
       </Head>
@@ -39,7 +25,7 @@ export default function Testing() {
         </Link>
       </Box>
 
-      <Grid gap={4}>
+      <Grid gap={4} pb={4}>
         <Link isExternal href="https://jestjs.io/" target="_blank">
           <Box
             _hover={{
@@ -155,7 +141,7 @@ export default function Testing() {
             <HStack>
               <Box bg={'white'} borderRadius={'100%'} color={'blue.400'}>
                 <Image
-                  alt="React testing library"
+                  alt="React Testing Library"
                   borderRadius="full"
                   h={16}
                   p={2}
@@ -165,7 +151,7 @@ export default function Testing() {
               </Box>
               <Box pl={2}>
                 <Text fontSize="xl" fontWeight="bold">
-                  React testing library
+                  React Testing Library
                 </Text>
               </Box>
             </HStack>
@@ -186,7 +172,7 @@ export default function Testing() {
             <HStack>
               <Box bg={'white'} borderRadius={'100%'} color={'blue.400'}>
                 <Image
-                  alt="React testing library"
+                  alt="React Testing Library"
                   borderRadius="full"
                   h={16}
                   p={2}
@@ -203,6 +189,6 @@ export default function Testing() {
           </Box>
         </Link>
       </Grid>
-    </Container>
+    </Page>
   )
 }

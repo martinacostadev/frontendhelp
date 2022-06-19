@@ -1,19 +1,13 @@
-import { Container, Grid, Text } from '@chakra-ui/react'
+import { Grid, Text } from '@chakra-ui/react'
 import ExternalLink from 'components/ExternalLink'
 
 import PageTitle from '../components/PageTitle'
 import { cheatSheets } from '../data/cheatSheets'
+import Page from './Page'
 
 export default function CheatSheets() {
   return (
-    <Container
-      bgColor="background"
-      borderRadius={12}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <PageTitle title="Cheat Sheets" />
 
       <Text mb={8}>
@@ -25,6 +19,6 @@ export default function CheatSheets() {
           <ExternalLink key={link.text} href={link.href} text={link.text} />
         ))}
       </Grid>
-    </Container>
+    </Page>
   )
 }

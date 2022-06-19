@@ -1,32 +1,19 @@
-import {
-  Box,
-  Container,
-  List,
-  ListIcon,
-  ListItem,
-  Text,
-} from '@chakra-ui/react'
+import { Box, List, ListIcon, ListItem, Text } from '@chakra-ui/react'
 import { MdCheckCircle } from 'react-icons/md'
 
 import PageTitle from '../components/PageTitle'
+import Page from './Page'
 
 export default function productivity() {
   return (
-    <Container
-      bgColor="background"
-      borderRadius={12}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <PageTitle title="Productividad" />
 
       <Box mb={6}>
         <Text fontSize="lg">Consejos para una mayor productividad</Text>
       </Box>
 
-      <Box mt={8}>
+      <Box mt={8} pb={8}>
         <List spacing={8}>
           <ListItem>
             <ListIcon as={MdCheckCircle} color="green.500" />
@@ -84,6 +71,6 @@ export default function productivity() {
           </ListItem>
         </List>
       </Box>
-    </Container>
+    </Page>
   )
 }

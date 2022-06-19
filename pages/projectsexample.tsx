@@ -1,14 +1,5 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import {
-  Box,
-  Container,
-  Flex,
-  Grid,
-  Heading,
-  Link,
-  Stack,
-  Text,
-} from '@chakra-ui/react'
+import { Box, Flex, Grid, Heading, Link, Stack, Text } from '@chakra-ui/react'
 
 import PageTitle from '../components/PageTitle'
 
@@ -21,6 +12,7 @@ import {
 import { BsListCheck } from 'react-icons/bs'
 import { CgDice3 } from 'react-icons/cg'
 import { FcIdea } from 'react-icons/fc'
+import Page from './Page'
 
 export default function Podcasts() {
   function Feature({
@@ -49,17 +41,10 @@ export default function Podcasts() {
   }
 
   return (
-    <Container
-      bgColor="background"
-      borderRadius={12}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <PageTitle title="Proyectos de ejemplo" />
 
-      <Grid gap={4} mt={6}>
+      <Grid gap={4} mt={6} pb={8}>
         <Flex mb={4}>
           <FcIdea />{' '}
           <Text ml={2}>Ideas de proyectos para practicar/portfolio.</Text>
@@ -173,6 +158,6 @@ export default function Podcasts() {
           />
         </Stack>
       </Grid>
-    </Container>
+    </Page>
   )
 }

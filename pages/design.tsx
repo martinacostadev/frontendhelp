@@ -1,18 +1,12 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Box, Container, Grid, Link, Text } from '@chakra-ui/react'
+import { Box, Grid, Link, Text } from '@chakra-ui/react'
 
 import PageTitle from '../components/PageTitle'
+import Page from './Page'
 
 export default function start() {
   return (
-    <Container
-      bgColor="background"
-      borderRadius={12}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <PageTitle title="Diseño UX/UI" />
 
       <Box my={6}>
@@ -26,7 +20,7 @@ export default function start() {
         </Link>
       </Box>
 
-      <Grid gap={4}>
+      <Grid gap={4} pb={4}>
         <Link isExternal href="https://www.figma.com/">
           <Text fontSize="xl" fontWeight="bold">
             Figma <ExternalLinkIcon mx="2px" />
@@ -72,6 +66,6 @@ export default function start() {
           </Text>
         </Box>
       </Grid>
-    </Container>
+    </Page>
   )
 }

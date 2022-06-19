@@ -1,8 +1,9 @@
-import { Box, Container, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, SimpleGrid, Text } from '@chakra-ui/react'
 import ExternalLink from 'components/ExternalLink'
 import { startLinks } from 'data/startLinks'
 
 import PageTitle from '../components/PageTitle'
+import Page from './Page'
 
 const GridResource = ({ resources }) => (
   <SimpleGrid columns={{ sm: 1, md: 2 }} gap={6} py={4}>
@@ -17,14 +18,7 @@ export default function start() {
   const englishResources = startLinks.filter((links) => links.language === 'en')
 
   return (
-    <Container
-      bgColor="background"
-      borderRadius={{ sm: 0, md: 12 }}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <PageTitle title="Comienzo" />
 
       <Text textStyle="descripcion" mb={4}>
@@ -50,6 +44,6 @@ export default function start() {
       </Text>
 
       <GridResource resources={englishResources} />
-    </Container>
+    </Page>
   )
 }

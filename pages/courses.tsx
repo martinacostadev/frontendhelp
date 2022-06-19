@@ -1,27 +1,12 @@
-import {
-  Box,
-  Container,
-  Grid,
-  HStack,
-  Icon,
-  Image,
-  Link,
-  Text,
-} from '@chakra-ui/react'
+import { Box, Grid, HStack, Icon, Image, Link, Text } from '@chakra-ui/react'
 import { FaYoutube } from 'react-icons/fa'
 
 import PageTitle from '../components/PageTitle'
+import Page from './Page'
 
 export default function Courses() {
   return (
-    <Container
-      bgColor="background"
-      borderRadius={12}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <PageTitle title="Cursos" />
 
       <Box mb={8}>
@@ -30,7 +15,7 @@ export default function Courses() {
         </Text>
       </Box>
 
-      <Grid gap={4}>
+      <Grid gap={4} pb={4}>
         <Link isExternal href="https://youtube.com" target="_blank">
           <Box
             _hover={{
@@ -409,6 +394,6 @@ export default function Courses() {
           </Box>
         </Link>
       </Grid>
-    </Container>
+    </Page>
   )
 }

@@ -1,7 +1,8 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Container, Grid, Link, Text } from '@chakra-ui/react'
+import { Grid, Link, Text } from '@chakra-ui/react'
 
 import PageTitle from 'components/PageTitle'
+import Page from './Page'
 
 export default function Jobs() {
   function Title({ text }) {
@@ -13,14 +14,7 @@ export default function Jobs() {
   }
 
   return (
-    <Container
-      bgColor="background"
-      borderRadius={12}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <PageTitle title="Consejos Entrevistas" />
 
       <Grid gap={4} mt={4} pb={6}>
@@ -118,6 +112,6 @@ export default function Jobs() {
           </Text>
         </Link>
       </Grid>
-    </Container>
+    </Page>
   )
 }

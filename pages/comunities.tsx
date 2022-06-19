@@ -1,18 +1,12 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Box, Container, Grid, Link, Text } from '@chakra-ui/react'
+import { Box, Grid, Link, Text } from '@chakra-ui/react'
 
 import PageTitle from '../components/PageTitle'
+import Page from './Page'
 
 export default function start() {
   return (
-    <Container
-      bgColor="background"
-      borderRadius={12}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <PageTitle title="Comunidades" />
 
       <Box mb={8}>
@@ -22,7 +16,7 @@ export default function start() {
         </Text>
       </Box>
 
-      <Grid gap={4}>
+      <Grid gap={4} pb={4}>
         <Link isExternal href="https://frontend.cafe/">
           <Text fontSize="xl" mt={2}>
             FrontEndCafe <ExternalLinkIcon mx="2px" />
@@ -73,6 +67,6 @@ export default function start() {
           </Text>
         </Link>
       </Grid>
-    </Container>
+    </Page>
   )
 }

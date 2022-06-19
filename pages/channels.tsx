@@ -1,7 +1,6 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import {
   Box,
-  Container,
   Grid,
   Heading,
   HStack,
@@ -14,24 +13,18 @@ import { FaYoutube } from 'react-icons/fa'
 import { ImTwitch } from 'react-icons/im'
 
 import PageTitle from '../components/PageTitle'
+import Page from './Page'
 
 export default function start() {
   return (
-    <Container
-      bgColor="background"
-      borderRadius={12}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <PageTitle title="Canales YouTube/Twitch" />
 
       <Box mb={8}>
         <Text fontSize="lg">Gente que genera contenido en vivo o grabado.</Text>
       </Box>
 
-      <Grid gap={4}>
+      <Grid gap={4} pb={4}>
         <List>
           <HStack spacing="6px">
             <ListIcon as={FaYoutube} color="red.600" h={12} w={12} />
@@ -145,6 +138,6 @@ export default function start() {
           </Text>
         </Link>
       </Grid>
-    </Container>
+    </Page>
   )
 }

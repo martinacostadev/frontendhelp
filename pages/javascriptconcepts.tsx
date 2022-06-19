@@ -1,25 +1,19 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Box, Container, Image, Link, Text } from '@chakra-ui/react'
+import { Box, Image, Link, Text } from '@chakra-ui/react'
 
 import PageTitle from '../components/PageTitle'
+import Page from './Page'
 
 export default function javascriptconcepts() {
   return (
-    <Container
-      bgColor="background"
-      borderRadius={12}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <PageTitle title="Conceptos JavaScript" />
 
       <Text fontSize="lg" mt={4}>
         Comúnmente utilizados en el día a día.
       </Text>
 
-      <Box mt={8}>
+      <Box mt={8} pb={4}>
         <Text fontSize="xl" fontWeight="bold" mt={2}>
           Operador condicional (ternario)
         </Text>
@@ -247,6 +241,6 @@ export default function javascriptconcepts() {
           </Text>
         </Link>
       </Box>
-    </Container>
+    </Page>
   )
 }

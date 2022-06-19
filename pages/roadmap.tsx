@@ -1,18 +1,12 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Box, Container, Grid, Link, Text } from '@chakra-ui/react'
+import { Box, Grid, Link, Text } from '@chakra-ui/react'
 
 import PageTitle from 'components/PageTitle'
+import Page from './Page'
 
 export default function start() {
   return (
-    <Container
-      bgColor="background"
-      borderRadius={12}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <PageTitle title="Roadmap" />
 
       <Box>
@@ -61,6 +55,6 @@ export default function start() {
           </Text>
         </Link>
       </Grid>
-    </Container>
+    </Page>
   )
 }

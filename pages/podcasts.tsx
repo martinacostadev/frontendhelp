@@ -1,21 +1,15 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Container, Grid, Link, Text } from '@chakra-ui/react'
+import { Grid, Link, Text } from '@chakra-ui/react'
 
 import PageTitle from '../components/PageTitle'
+import Page from './Page'
 
 export default function Podcasts() {
   return (
-    <Container
-      bgColor="background"
-      borderRadius={12}
-      boxShadow="dark-lg"
-      my={4}
-      px={8}
-      py={4}
-    >
+    <Page>
       <PageTitle title="Podcasts" />
 
-      <Grid gap={4} mt={6}>
+      <Grid gap={4} mt={6} pb={8}>
         <Link
           isExternal
           href="https://open.spotify.com/show/5uRPZ5r7bRkW29c5AkppXq"
@@ -38,6 +32,6 @@ export default function Podcasts() {
           </Text>
         </Link>
       </Grid>
-    </Container>
+    </Page>
   )
 }

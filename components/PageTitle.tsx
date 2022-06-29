@@ -7,6 +7,8 @@ export default function PageTitle(props) {
   const router = useRouter()
   const { title, description = '' } = props
 
+  const handleBack = () => router.push('/')
+
   return (
     <>
       <Head>
@@ -23,7 +25,7 @@ export default function PageTitle(props) {
             </Heading>
           </Box>
           <Spacer />
-          <Link onClick={() => router.back()}>
+          <Link onClick={handleBack}>
             <Box py="4">
               <Heading as="h3" display="flex" size="lg">
                 <Icon as={IoMdArrowRoundBack} h={8} w={8} />

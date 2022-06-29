@@ -78,7 +78,19 @@ export default function Podcasts() {
           .
         </Text>
 
-        <Text mb={2}>
+        <Text fontSize="2xl" mt={8}>
+          En Front End Mentor hay varias ideas:
+        </Text>
+
+        <Link
+          href="https://www.frontendmentor.io/challenges?types=free"
+          isExternal
+          mb={4}
+        >
+          Front End Mentor <ExternalLinkIcon mx="2px" />
+        </Link>
+
+        <Text fontSize="2xl" mt={8}>
           Podés sacar inspiración de muchos sitios para imitar el diseño UI/UX.
           Algunos sitios:
         </Text>

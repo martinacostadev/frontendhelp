@@ -166,7 +166,7 @@ export default function Podcasts() {
             title="Login"
             desc="- Hacer un diseño minimalista pero que sea vea muy bien (buscar ejemplos) y sea funcional."
             desc2="- Validar que sea un e-mail válido, validar que la contraseña tenga mayúsculas y números o muestre error en rojo."
-            desc3='- Al ingresar los datos correctos que rediriga a una página de éxito (success). Se puede simular el Backend validando con javascript puro, ejemplo: if (email === "martin@gmail.com" && password = "Test2021").'
+            desc3='- Al ingresar los datos correctos que rediriga a una página de éxito (success). Se puede simular el Backend validando con javascript puro, ejemplo: if (email === "martin@gmail.com" && password = "Test2023").'
           />
         </Stack>
       </Grid>

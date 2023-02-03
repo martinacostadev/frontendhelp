@@ -36,14 +36,12 @@ export default function start() {
 
         <Link isExternal href="https://www.youtube.com/c/midudev">
           <Text fontSize="xl" mt={2}>
-            Midudev
-            <ExternalLinkIcon mx="2px" />
+            Midudev <ExternalLinkIcon mx="2px" />
           </Text>
         </Link>
         <Link isExternal href="https://youtube.gonzalopozzo.com/">
           <Text fontSize="xl" mt={2}>
-            Goncy Pozzo
-            <ExternalLinkIcon mx="2px" />
+            Goncy Pozzo <ExternalLinkIcon mx="2px" />
           </Text>
         </Link>
         <Link
@@ -103,8 +101,7 @@ export default function start() {
 
         <Link isExternal href="https://www.twitch.tv/midudev">
           <Text fontSize="xl" mt={2}>
-            Midudev
-            <ExternalLinkIcon mx="2px" />
+            Midudev <ExternalLinkIcon mx="2px" />
           </Text>
         </Link>
 

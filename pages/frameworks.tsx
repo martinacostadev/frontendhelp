@@ -24,7 +24,7 @@ export default function start() {
         </Text>
         <Text mt={4}>
           Todas tienen sus ventajas y desventajas, si buscás por salida laboral
-          hoy en día, 2021, React es el más demandado.
+          hoy en día, 2023, React es el más demandado.
         </Text>
       </Box>
 
@@ -41,11 +41,26 @@ export default function start() {
           libreria. Si quieres lanzar una web robusta, dinámica y escalable con
           un rendimiento fiable, la elección debe ser React.js
         </Text>
+
+        <Link isExternal href="https://nextjs.org/">
+          <Text fontSize="xl" fontWeight="bold" mt={2}>
+            Next.js <ExternalLinkIcon mx="2px" />
+          </Text>
+        </Link>
+        <Text>
+          NextJS es un framework JavaScript ligero y de código abierto creado
+          sobre React, que permite desarrollar aplicaciones y sitios web muy
+          rápidos y fáciles de usar. Aunque tiene una curva de aprendizaje,
+          incluso los desarrolladores nuevos de frontend pueden aprenderlo
+          rápidamente.
+        </Text>
+
         <Link isExternal href="https://angular.io/">
           <Text fontSize="xl" fontWeight="bold" mt={2}>
             Angular <ExternalLinkIcon mx="2px" />
           </Text>
         </Link>
+
         <Text>
           Angular es un framework de desarrollo para JavaScript creado por
           Google. La finalidad de Angular es facilitarnos el desarrollo de

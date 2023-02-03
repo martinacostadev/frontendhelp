@@ -14,21 +14,16 @@ export default function start() {
           isExternal
           href="https://dev.to/jorgeucano/deberias-colaborar-en-proyectos-open-source-1onf"
         >
-          <Text fontSize="xl" fontWeight="bold" mt={2}>
+          <Text fontSize="xl" fontWeight="bold">
             ¿Por qué colaborar en Proyectos Open Source?
           </Text>
         </Link>
       </Box>
 
-      <Grid gap={4} mt={4} pb={6}>
+      <Grid gap={4} mt={8} pb={6}>
         <Link isExternal href="https://github.com/explore">
-          <Text fontSize="xl" fontWeight="bold" mt={2}>
+          <Text fontSize="xl" mt={2}>
             GitHub <ExternalLinkIcon mx="2px" />
-          </Text>
-        </Link>
-        <Link isExternal href="https://comit.ar/voluntariado">
-          <Text fontSize="xl" fontWeight="bold" mt={2}>
-            Aplicación adopción mascotas <ExternalLinkIcon mx="2px" />
           </Text>
         </Link>
       </Grid>

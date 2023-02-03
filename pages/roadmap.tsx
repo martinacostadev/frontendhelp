@@ -27,7 +27,7 @@ export default function start() {
         </Text>
         <Text mt={4}>
           Es muy importante entender las bases de HTML, su sintaxis, mejores
-          prácticas, SEO. En CSS aprender CSS Pure antes que con librerías o
+          prácticas, SEO. En CSS aprender CSS puro antes que con librerías o
           post procesadores, Flex y Grid. Y en JavaScript lo escencial es el
           manejo del DOM y promesas.
         </Text>

@@ -181,7 +181,7 @@ export default function start() {
 
       <Box mt={16}>
         <Text fontSize="xl" fontWeight="bold" my={6}>
-          ¿Cuál es el lenguaje de programación con más demanda laboral en 2022?
+          ¿Cuál es el lenguaje de programación con más demanda laboral en 2023?
         </Text>
         <Text mt={4}>
           La realidad es que hay demanda hasta en COBOL, un lenguaje de

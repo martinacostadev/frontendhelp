@@ -7,7 +7,7 @@ import Page from './Page'
 export default function Jobs() {
   function Title({ text }) {
     return (
-      <Text fontSize="xl" fontWeight="bold" color="teal.600">
+      <Text fontSize="xl" fontWeight="bold" color="green.400">
         {text}
       </Text>
     )

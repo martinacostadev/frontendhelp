@@ -10,6 +10,14 @@ export default function Section({
   gradientFrom,
   gradientTo,
 }) {
+  function moreThanThreeWords(text: string) {
+    return text.split(' ').length > 3
+  }
+
+  function getFontSize() {
+    return moreThanThreeWords(title) ? '1xl' : '2xl'
+  }
+
   return (
     <Link href={page}>
       <Box
@@ -31,7 +39,7 @@ export default function Section({
             <Icon as={icon} h={8} w={8} />
           </Box>
           <Box pl={2}>
-            <Text fontSize="3xl" textStyle="title">
+            <Text fontSize={getFontSize()} textStyle="title">
               {title}{' '}
               {isNew && (
                 <Badge ml="1" colorScheme="green">
